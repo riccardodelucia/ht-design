@@ -1,0 +1,121 @@
+// VARIABLES
+:root {
+  --color-blue-dark: #16355c;
+  --color-blue: #1f59a0;
+  --color-blue-medium: #105d84;
+  --color-blue-light: #007cbd;
+  --color-blue-lighter: #009de0;
+
+  --color-green: #6caf51;
+  --color-green-light: #77c15a;
+  --color-green-lighter: #83d661;
+
+  --color-teal: #2fb5b3;
+  --color-teal-light: #31ccc9;
+  --color-teal-lighter: #30ddda;
+
+  --color-text-dark-blue: #2b4d79;
+  --color-text-darker-blue: #15427c;
+
+  --color-grey-background: #fcfcfc;
+  --color-grey-lighter: #f0f0f0;
+  --color-grey-light: #e0e0e0;
+  --color-grey-medium: #a0a0a0;
+  --color-grey-dark: #707070;
+  --color-grey-darker: #585858;
+  --color-grey-text: #484848;
+
+  --color-orange: rgb(255, 115, 0);
+  --color-orange-dark: rgb(216, 97, 0);
+  --color-orange-darker: rgb(158, 76, 0);
+
+  --color-gradient-blue-0: #008ed3;
+  --color-gradient-blue-100: rgba(0, 173, 238, 1);
+  --color-gradient-green-0: #8bc53f;
+  --color-gradient-green-100: #96c63f;
+
+  --shadow-1: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-2: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+}
+
+// BASIC CSS RULES
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: 1200px) {
+    font-size: 50%;
+  }
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.layout-app {
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns:
+    min-content minmax(5rem, 1fr) repeat(8, minmax(min-content, 15rem))
+    minmax(5rem, 1fr);
+
+  grid-template-rows: auto 1fr;
+
+  &__header {
+    grid-row: 1 / 2;
+    grid-column: 2 / -1;
+  }
+
+  &__sidenav {
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
+  }
+
+  &__content {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+    background-color: var(--color-grey-background);
+    padding: 1.5em 2em 1em 2em;
+  }
+}
+
+.layout-web {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.layout-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  height: 100vh;
+
+  background-image: linear-gradient(
+    to right,
+    var(--color-gradient-blue-0) 0%,
+    var(--color-gradient-blue-100) 5%,
+    var(--color-gradient-green-0) 95%,
+    var(--color-gradient-green-100) 100%
+  );
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+ul {
+  list-style-position: inside;
+}
