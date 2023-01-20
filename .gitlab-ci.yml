@@ -8,6 +8,8 @@ deploy:
   before_script:
     - echo "@${CI_PROJECT_NAMESPACE}:registry=https://${CI_SERVER_HOST}/api/v4/projects/${PACKAGE_REGISTRY_PROJECT_ID}/packages/npm/">.npmrc
     - echo "//${CI_SERVER_HOST}/api/v4/projects/${PACKAGE_REGISTRY_PROJECT_ID}/packages/npm/:_authToken=${CI_JOB_TOKEN}" >>.npmrc
+    - npm install
+    - npm run build
   script:
     - npm publish
   only:
