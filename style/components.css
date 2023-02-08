@@ -281,7 +281,11 @@
 /////////////////////////////////////////////////
 // FOOTER
 .footer {
-  background-color: var(--color-blue-light);
+  background-color: var(--color-blue-700);
+
+  div {
+    margin: auto;
+  }
 
   &__logo {
     padding: 2em 3em 0.5em 3em;
@@ -375,14 +379,15 @@
 .header {
   background-image: linear-gradient(
     to right,
-    var(--color-gradient-blue-0) 0%,
-    var(--color-gradient-blue-100) 5%,
-    var(--color-gradient-green-0) 95%,
-    var(--color-gradient-green-100) 100%
+    var(--color-blue-600) 0%,
+    var(--color-blue-400) 35%,
+    var(--color-green-400) 65%,
+    var(--color-green-600) 100%
   );
 
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 1em 2em;
 
   &__content {
     margin: auto;
@@ -391,7 +396,6 @@
     align-items: center;
 
     min-height: 9.5rem;
-    padding: 1em 2em;
 
     gap: 2rem;
   }

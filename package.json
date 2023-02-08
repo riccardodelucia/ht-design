@@ -7,7 +7,7 @@
     "dist/style.css"
   ],
   "exports": {
-    "./dist/style.css": "./dist/style.css"
+    "./style.css": "./dist/style.css"
   },
   "scripts": {
     "dev": "vite",

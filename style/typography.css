@@ -4,7 +4,7 @@ body {
   line-height: 1.5;
   font-family: "Raleway", "Open Sans", sans-serif;
   letter-spacing: 0.5px;
-  color: var(--color-text-dark-blue);
+  color: var(--color-text-body);
 }
 
 h1,
