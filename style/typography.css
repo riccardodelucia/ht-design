@@ -1,48 +1,128 @@
+:root {
+  --font-primary: "Raleway";
+  --font-secondary: sans-serif;
+
+  --text-base-size: 1.6em;
+  --text-scale-ratio: 1.2;
+
+  --color-text-body: var(--color-blue-1000);
+  --color-text-heading: var(--color-blue-1000);
+
+  --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+  --text-sm: calc(1em / var(--text-scale-ratio));
+  --text-md: calc(1em * var(--text-scale-ratio));
+  --text-lg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xl: calc(
+    1em * var(--text-scale-ratio) * var(--text-scale-ratio) *
+      var(--text-scale-ratio)
+  );
+  --text-xxl: calc(
+    1em * var(--text-scale-ratio) * var(--text-scale-ratio) *
+      var(--text-scale-ratio) * var(--text-scale-ratio)
+  );
+  --text-xxxl: calc(
+    1em * var(--text-scale-ratio) * var(--text-scale-ratio) *
+      var(--text-scale-ratio) * var(--text-scale-ratio) *
+      var(--text-scale-ratio)
+  );
+
+  /* spacing values */
+  --space-xxxs: 0.25em;
+  --space-xxs: 0.375em;
+  --space-xs: 0.5em;
+  --space-sm: 0.75em;
+  --space-md: 1.25em;
+  --space-lg: 2em;
+  --space-xl: 3.25em;
+  --space-xxl: 5.25em;
+  --space-xxxl: 8.5em;
+
+  /* line-height */
+  --heading-line-height: 1.2;
+  --body-line-height: 1.4;
+
+  @media only screen and (min-width: 1440px) {
+    --text-base-size: 1.85em;
+    --text-scale-ratio: 1.25;
+  }
+}
+
 body {
-  font-size: 1.8rem;
-  text-rendering: optimizeLegibility;
-  line-height: 1.5;
-  font-family: "Raleway", "Open Sans", sans-serif;
-  letter-spacing: 0.5px;
+  font-size: var(--text-base-size);
+  font-family: var(--font-primary);
   color: var(--color-text-body);
 }
 
 h1,
 h2,
-h3 {
-  color: var(--color-text-darker-blue);
-}
-h1 {
-  font-size: 4.5rem;
-  font-weight: 500;
-  //line-height: 1em;
-}
-
-h2 {
-  font-size: 3rem;
-  font-weight: 500;
-  //font-weight: bold;
-  //line-height: 1em;
-  letter-spacing: 1.2px;
+h3,
+h4,
+form legend {
+  color: var(--color-text-heading);
+  margin-bottom: var(--space-xxs);
+  line-height: var(--heading-line-height);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
 }
 
-h3 {
-  font-size: 2.2rem;
-  font-weight: 500;
-  //font-weight: bold;
-  line-height: 1.2;
+h2,
+h3,
+h4 {
+  margin-top: var(--space-sm);
+}
+
+.text--xxxl {
+  font-size: var(--text-xxxl);
+}
+
+h1,
+.text--xxl {
+  font-size: var(--text-xxl);
+  max-width: 15ch;
+}
+
+h2,
+.text--xl {
+  font-size: var(--text-xl);
+  max-width: 30ch;
+}
+
+h3,
+.text--lg {
+  font-size: var(--text-lg);
+  max-width: 30ch;
+}
+
+h4,
+.text--md {
+  font-size: var(--text-md);
+  max-width: 40ch;
+}
+
+.text--sm,
+small {
+  font-size: var(--text-sm);
+}
+
+.text--xs {
+  font-size: var(--text-xs);
 }
 
 p {
-  line-height: 2;
+  line-height: var(--body-line-height);
+  max-width: 70ch;
+  margin-bottom: var(--space-md);
 }
 
-.text-small {
-  font-size: 1.6rem;
+b,
+strong {
+  font-weight: bold;
+  line-height: var(--body-line-height);
+}
 
-  p {
-    line-height: 1.5;
-  }
-
-  //margin-bottom: 1em;
+ul,
+ol,
+p {
+  margin-bottom: var(--space-md);
 }

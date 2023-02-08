@@ -4,7 +4,7 @@ import path from "path";
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve(__dirname, "/style/main.css"),
+      entry: path.resolve(__dirname, "index.js"),
       name: "HTDesign",
     },
     minify: false,
