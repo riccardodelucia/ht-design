@@ -121,3 +121,8 @@ ol,
 p {
   margin-bottom: var(--space-md);
 }
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}

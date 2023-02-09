@@ -1,8 +1,4 @@
 // UTILITIES
-.web-container {
-  max-width: var(--web-max-width);
-  margin: auto;
-}
 
 /* .htu-web-max-width {
   max-width: var(--web-max-width);

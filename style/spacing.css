@@ -8,9 +8,17 @@
   --space-xl: calc(3.25 * var(--space-unit));
   --space-xxl: calc(5.25 * var(--space-unit));
 
-  /* standard paddings */
-  --component-padding: var(--space-md);
-  --container-padding: var(--space-md);
+  --side-spacing: var(--space-sm);
+  --web-content-width: calc(1400px + 2 * var(--side-spacing));
+  --container-padding: var(--side-spacing);
+  --component-padding: var(--space-sm);
+}
+
+.web-container {
+  max-width: var(--web-content-width);
+  margin: 0 auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
 }
 
 .margin-top,

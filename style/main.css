@@ -1,7 +1,7 @@
 @import "base.css";
 @import "typography.css";
 @import "spacing.css";
-@import "layout.css";
 @import "utilities.css";
 @import "components.css";
-@import "components/button.css";
+@import "components/button";
+@import "components/header";
