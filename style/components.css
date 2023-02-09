@@ -39,71 +39,73 @@
   border-radius: 100px;
   cursor: pointer;
 
-  font-weight: bold;
-  transition: all 0.3s ease-out;
+  color: white;
 
-  height: 3.5rem;
-  padding: 0.4em 0.8em;
-  font-size: 1.6rem;
+  //font-weight: bold;
+  transition: all 0.3s ease-out;
+  font-size: inherit;
+
+  //height: 3.5rem;
+  //padding: 0.4em 0.8em;
+  //font-size: 1.6rem;
 
   &--large {
-    height: 5rem;
-    padding: 0.5em 1.4em;
-    font-size: 1.8rem;
+    //height: 5rem;
+    //padding: 0.5em 1.4em;
+    //font-size: 1.8rem;
   }
 
   &--small {
-    height: 3rem;
-    padding: 0.2em 0.7em;
-    font-size: 1.5rem;
+    //height: 3rem;
+    //padding: 0.2em 0.7em;
+    //font-size: 1.5rem;
   }
 
   &--primary {
-    background-color: var(--color-blue-lighter);
-    border: 2px solid var(--color-blue-lighter);
-    color: white;
-    //border: none;
+    background-color: var(--color-blue-400);
+    border: 2px solid var(--color-blue-400);
+
     &:hover {
-      background-color: var(--color-blue-light);
-      border-color: var(--color-blue-light);
+      background-color: var(--color-blue-600);
+      border-color: var(--color-blue-600);
     }
 
     &:active {
-      background-color: var(--color-blue-medium);
-      border-color: var(--color-blue-medium);
+      background-color: var(--color-blue-800);
+      border-color: var(--color-blue-800);
     }
   }
 
   &--secondary {
-    background-color: var(--color-green-lighter);
-    border: 2px solid var(--color-green-lighter);
-    color: white;
+    background-color: var(--color-green-400);
+    border: 2px solid var(--color-green-400);
+    //color: white;
     &:hover {
-      background-color: var(--color-green-light);
-      border-color: var(--color-green-light);
+      background-color: var(--color-green-600);
+      border-color: var(--color-green-600);
     }
 
     &:active {
-      background-color: var(--color-green);
-      border-color: var(--color-green);
+      background-color: var(--color-green-800);
+      border-color: var(--color-green-800);
     }
   }
 
   &--ghost {
     background-color: transparent;
 
-    border: 2px solid var(--color-teal-lighter);
-    color: var(--color-teal-lighter);
+    border: 2px solid var(--color-teal-400);
+    color: var(--color-teal-400);
 
     &:hover {
-      background-color: var(--color-teal-light);
-      border-color: var(--color-teal-light);
+      background-color: var(--color-teal-600);
+      border-color: var(--color-teal-600);
       color: white;
     }
 
     &:active {
-      background-color: var(--color-teal);
-      border-color: var(--color-teal);
+      background-color: var(--color-teal-800);
+      border-color: var(--color-teal-800);
       color: white;
     }
   }
