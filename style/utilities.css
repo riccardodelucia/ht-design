@@ -1,12 +1,12 @@
 // UTILITIES
 
-.htu-web-max-width {
+/* .htu-web-max-width {
   max-width: var(--web-max-width);
 }
 
-/* .u-grid-span-cols {
+.u-grid-span-cols {
   grid-column: 1 / -1;
-} */
+}
 
 .htu-text-align-center {
   text-align: center;
@@ -60,4 +60,4 @@
 
 .u-overflow-hidden {
   overflow: hidden;
-}
+} */

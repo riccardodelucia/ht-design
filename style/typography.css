@@ -18,7 +18,7 @@
   --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
 
   /* margin spacing values */
-  --space-xxxs: 0.25em;
+  /* --space-xxxs: 0.25em;
   --space-xxs: 0.375em;
   --space-xs: 0.5em;
   --space-sm: 0.75em;
@@ -26,7 +26,7 @@
   --space-lg: 2em;
   --space-xl: 3.25em;
   --space-xxl: 5.25em;
-  --space-xxxl: 8.5em;
+  --space-xxxl: 8.5em; */
 
   /* line-height */
   --heading-line-height: 1.4;
@@ -97,6 +97,7 @@ h4,
 .text--sm,
 small {
   font-size: var(--text-sm);
+  letter-spacing: 0.5px;
 }
 
 .text--xs {
