@@ -8,8 +8,9 @@
   --space-xl: calc(3.25 * var(--space-unit));
   --space-xxl: calc(5.25 * var(--space-unit));
 
-  /* components padding */
-  --component-padding: var(--space-sm);
+  /* standard paddings */
+  --component-padding: var(--space-md);
+  --container-padding: var(--space-md);
 }
 
 .margin-top,

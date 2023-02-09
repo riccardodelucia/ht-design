@@ -1,0 +1,131 @@
+:root {
+  --btn-font-size: 1em;
+  --btn-sm: calc(var(--btn-font-size) - 0.2em);
+  --btn-md: calc(var(--btn-font-size) + 0.2em);
+  --btn-lg: calc(var(--btn-font-size) + 0.4em);
+
+  --btn-radius: 100px;
+}
+
+.btn {
+  display: inline-flex;
+  position: relative;
+  white-space: nowrap;
+  text-decoration: none;
+  outline: none;
+  line-height: 1;
+  cursor: pointer;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--btn-radius);
+  border: 2px solid;
+  font-size: var(--btn-font-size);
+  color: white;
+
+  transition: 0.2s;
+
+  &:active {
+    transition: none;
+  }
+}
+
+/* themes */
+.btn--primary {
+  // main button
+  background-color: var(--color-blue-400);
+  color: white; //var(--btn-primary-label);
+  border-color: var(--color-blue-400);
+
+  &:visited {
+    color: var(--color-blue-600);
+    border-color: var(--color-blue-600);
+  }
+
+  &:hover {
+    background-color: var(--color-blue-600);
+    border-color: var(--color-blue-600);
+  }
+
+  &:active {
+    background-color: var(--color-blue-800);
+    border-color: var(--color-blue-800);
+  }
+}
+
+.btn--secondary {
+  // main button
+  background-color: var(--color-green-400);
+  color: white; //var(--btn-primary-label);
+  border-color: var(--color-green-400);
+
+  &:visited {
+    color: var(--color-green-600);
+    border-color: var(--color-green-600);
+  }
+
+  &:hover {
+    background-color: var(--color-green-600);
+    border-color: var(--color-green-600);
+  }
+
+  &:active {
+    background-color: var(--color-green-800);
+    border-color: var(--color-green-800);
+  }
+}
+
+.btn--ghost {
+  // main button
+  background-color: transparent;
+  color: var(--color-teal-400);
+  border-color: var(--color-teal-400);
+
+  &:visited {
+    color: white;
+    color: var(--color-green-600);
+    background-color: var(--color-teal-600);
+    border-color: var(--color-teal-600);
+  }
+
+  &:hover {
+    color: white;
+    background-color: var(--color-teal-600);
+    border-color: var(--color-teal-600);
+  }
+
+  &:active {
+    color: white;
+    background-color: var(--color-teal-800);
+    border-color: var(--color-teal-800);
+  }
+}
+
+/* button size */
+.btn--sm {
+  font-size: var(--btn-sm);
+}
+
+.btn--md {
+  font-size: var(--btn-md);
+}
+
+.btn--lg {
+  font-size: var(--btn-lg);
+}
+
+.btn--full-width {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+/* button container */
+.btns-group {
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

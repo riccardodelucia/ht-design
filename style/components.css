@@ -29,8 +29,39 @@
 }
 
 ///////////////////////////////////////////////
+/* .btn {
+  display: inline-flex;
+  position: relative;
+  white-space: nowrap;
+  text-decoration: none;
+  line-height: 1;
+
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--btn-radius);
+  font-size: var(--btn-font-size);
+  color: var(--color-link);
+}
+
+.btn--primary {
+  // main button
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-label);
+
+  &:visited {
+    color: var(--btn-primary-label);
+  }
+
+  &:hover {
+    background-color: var(--btn-primary-hover);
+  }
+
+  &:active {
+    background-color: var(--btn-primary-active);
+  }
+} */
+
 // BUTTON
-.button {
+/* .button {
   display: inline-flex;
   justify-content: space-around;
   align-items: center;
@@ -109,7 +140,7 @@
       color: white;
     }
   }
-}
+} */
 
 /////////////////////////////////////////////////////
 // BASE THUMBNAIL
