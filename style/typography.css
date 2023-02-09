@@ -1,32 +1,23 @@
 :root {
-  --font-primary: "Raleway";
-  --font-secondary: sans-serif;
+  --font-primary: "Open Sans";
+  --font-secondary: "Poppins";
 
-  --text-base-size: 1.6em;
+  --text-base-size: 1.7em;
   --text-scale-ratio: 1.2;
 
-  --color-text-body: var(--color-blue-1000);
-  --color-text-heading: var(--color-blue-1000);
+  --color-text-body: var(--color-blue-900);
+  --color-text-heading: var(--color-blue-900);
 
-  --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+  /* text sizes */
+  --text-xs: calc(var(--text-sm) * var(--text-scale-ratio));
   --text-sm: calc(1em / var(--text-scale-ratio));
   --text-md: calc(1em * var(--text-scale-ratio));
-  --text-lg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
-  --text-xl: calc(
-    1em * var(--text-scale-ratio) * var(--text-scale-ratio) *
-      var(--text-scale-ratio)
-  );
-  --text-xxl: calc(
-    1em * var(--text-scale-ratio) * var(--text-scale-ratio) *
-      var(--text-scale-ratio) * var(--text-scale-ratio)
-  );
-  --text-xxxl: calc(
-    1em * var(--text-scale-ratio) * var(--text-scale-ratio) *
-      var(--text-scale-ratio) * var(--text-scale-ratio) *
-      var(--text-scale-ratio)
-  );
+  --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
+  --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
+  --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
+  --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
 
-  /* spacing values */
+  /* margin spacing values */
   --space-xxxs: 0.25em;
   --space-xxs: 0.375em;
   --space-xs: 0.5em;
@@ -38,19 +29,21 @@
   --space-xxxl: 8.5em;
 
   /* line-height */
-  --heading-line-height: 1.2;
-  --body-line-height: 1.4;
+  --heading-line-height: 1.4;
+  --body-line-height: 1.7;
 
-  @media only screen and (min-width: 1440px) {
+  /*   @media only screen and (min-width: 1024px) {
     --text-base-size: 1.85em;
     --text-scale-ratio: 1.25;
-  }
+  } */
 }
 
 body {
   font-size: var(--text-base-size);
   font-family: var(--font-primary);
   color: var(--color-text-body);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1,
@@ -64,6 +57,7 @@ form legend {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
+  font-family: var(--font-secondary);
 }
 
 h2,
@@ -79,25 +73,25 @@ h4 {
 h1,
 .text--xxl {
   font-size: var(--text-xxl);
-  max-width: 15ch;
+  max-width: 30ch;
 }
 
 h2,
 .text--xl {
   font-size: var(--text-xl);
-  max-width: 30ch;
+  max-width: 40ch;
 }
 
 h3,
 .text--lg {
   font-size: var(--text-lg);
-  max-width: 30ch;
+  max-width: 45ch;
 }
 
 h4,
 .text--md {
   font-size: var(--text-md);
-  max-width: 40ch;
+  max-width: 50ch;
 }
 
 .text--sm,

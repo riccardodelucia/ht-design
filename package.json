@@ -22,6 +22,9 @@
     "vite": "^3.2.3"
   },
   "dependencies": {
+    "@fontsource/noto-sans": "^4.5.11",
+    "@fontsource/open-sans": "^4.5.14",
+    "@fontsource/poppins": "^4.5.10",
     "@fontsource/raleway": "^4.5.12"
   }
 }
