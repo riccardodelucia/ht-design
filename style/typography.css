@@ -43,7 +43,6 @@ body {
   font-family: var(--font-primary);
   color: var(--color-text-body);
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
 }
 
 h1,
@@ -55,7 +54,6 @@ form legend {
   margin-bottom: var(--space-xxs);
   line-height: var(--heading-line-height);
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
   font-weight: 800;
   font-family: var(--font-secondary);
 }
@@ -70,28 +68,40 @@ h4 {
   font-size: var(--text-xxxl);
 }
 
+h1 {
+  max-width: 30ch;
+}
+
 h1,
 .text--xxl {
   font-size: var(--text-xxl);
+}
+
+h2 {
   max-width: 30ch;
 }
 
 h2,
 .text--xl {
   font-size: var(--text-xl);
-  max-width: 40ch;
+}
+
+h3 {
+  max-width: 30ch;
 }
 
 h3,
 .text--lg {
   font-size: var(--text-lg);
-  max-width: 45ch;
+}
+
+h4 {
+  max-width: 30ch;
 }
 
 h4,
 .text--md {
   font-size: var(--text-md);
-  max-width: 50ch;
 }
 
 .text--sm,
@@ -105,9 +115,7 @@ small {
 }
 
 p {
-  line-height: var(--body-line-height);
-  max-width: 70ch;
-  margin-bottom: var(--space-md);
+  //max-width: 70ch;
 }
 
 b,
@@ -119,6 +127,7 @@ strong {
 ul,
 ol,
 p {
+  line-height: var(--body-line-height);
   margin-bottom: var(--space-md);
 }
 

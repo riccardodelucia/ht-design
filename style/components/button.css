@@ -9,6 +9,7 @@
 
 .btn {
   display: inline-flex;
+  align-items: center;
   position: relative;
   white-space: nowrap;
   text-decoration: none;
@@ -19,7 +20,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  padding: var(--space-xs) var(--space-sm);
+  padding: var(--space-xs) var(--space-md);
   border-radius: var(--btn-radius);
   border: 2px solid;
   font-size: var(--btn-font-size);

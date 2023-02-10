@@ -1,0 +1,37 @@
+.sidenav {
+  width: 20rem;
+  min-height: 100vh;
+  color: white;
+  background-color: var(--color-blue-700);
+
+  &__title {
+    padding: var(--component-padding);
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    width: 100%;
+    padding: var(--component-padding);
+
+    &--active {
+      background-color: var(--color-green-600);
+    }
+
+    span {
+      display: block;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-green-600);
+      span {
+        transform: translateX(0.5em);
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+  }
+}
