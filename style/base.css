@@ -43,6 +43,14 @@
   --color-secondary: var(--color-green-500);
   --color-tertiary: var(--color-teal-500);
 
+  --color-grey-background: #fcfcfc;
+  --color-grey-lighter: #f0f0f0;
+  --color-grey-light: #e0e0e0;
+  --color-grey-medium: #a0a0a0;
+  --color-grey-dark: #707070;
+  --color-grey-darker: #585858;
+  --color-grey-text: #484848;
+
   /*   --color-blue-dark: #16355c;
   --color-blue: #1f59a0;
   --color-blue-medium: #105d84;

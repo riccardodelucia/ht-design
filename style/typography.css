@@ -114,10 +114,6 @@ small {
   font-size: var(--text-xs);
 }
 
-p {
-  //max-width: 70ch;
-}
-
 b,
 strong {
   font-weight: bold;
@@ -129,6 +125,14 @@ ol,
 p {
   line-height: var(--body-line-height);
   margin-bottom: var(--space-md);
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--color-text-heading);
+  line-height: var(--body-line-height);
 }
 
 .link {
