@@ -271,3 +271,41 @@
     top: var(--space-sm);
   }
 }
+
+///////////////////////////////////////////////
+// TOGGLE SWITCH
+.toggle {
+  margin-top: var(--space-xxs);
+  display: flex;
+  gap: var(--space-sm);
+  cursor: pointer;
+  user-select: none;
+  font-weight: var(--font-weight-standard);
+
+  &__input {
+    width: 5rem;
+    height: 3rem;
+    background-color: white;
+    border: 2px solid var(--color-blue-400);
+    border-radius: 3.4rem;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0.5rem;
+      top: 0.4rem;
+      width: 1.8rem;
+      height: 1.8rem;
+      border-radius: 50%;
+      background-color: var(--color-blue-400);
+      transition: transform 0.2s ease;
+    }
+
+    &--selected {
+      &:after {
+        transform: translate(1.9rem);
+      }
+    }
+  }
+}

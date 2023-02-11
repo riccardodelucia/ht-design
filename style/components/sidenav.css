@@ -15,6 +15,7 @@
   &__item {
     width: 100%;
     padding: var(--component-padding);
+    cursor: pointer;
 
     &--active {
       background-color: var(--color-green-600);
