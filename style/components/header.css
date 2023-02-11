@@ -19,8 +19,7 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 2rem;
-  padding-top: var(--component-padding);
-  padding-bottom: var(--component-padding);
+  padding: var(--component-padding);
 
   &__nav {
     margin-left: auto;

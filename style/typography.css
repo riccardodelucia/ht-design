@@ -2,6 +2,11 @@
   --font-primary: "Open Sans";
   --font-secondary: "Poppins";
 
+  --font-weight-light: 400;
+  --font-weight-standard: 500;
+  --font-weight-bold: 700;
+  --font-weight-headings: 600;
+
   --text-base-size: 1.7em;
   --text-scale-ratio: 1.2;
 
@@ -41,6 +46,7 @@
 body {
   font-size: var(--text-base-size);
   font-family: var(--font-primary);
+  font-weight: var(--font-weight-standard);
   color: var(--color-text-body);
   text-rendering: optimizeLegibility;
 }
@@ -54,7 +60,7 @@ form legend {
   margin-bottom: var(--space-xxs);
   line-height: var(--heading-line-height);
   text-rendering: optimizeLegibility;
-  font-weight: 800;
+  font-weight: var(--font-weight-headings);
   font-family: var(--font-secondary);
 }
 
@@ -115,23 +121,31 @@ small {
 }
 
 b,
-strong {
-  font-weight: bold;
+strong,
+label,
+ul,
+ol,
+p {
   line-height: var(--body-line-height);
 }
 
 ul,
 ol,
 p {
-  line-height: var(--body-line-height);
   margin-bottom: var(--space-md);
+}
+
+b,
+strong,
+label {
+  font-weight: bold;
 }
 
 input,
 textarea {
   font-family: inherit;
   font-size: inherit;
-  color: var(--color-text-heading);
+  color: var(--color-text-body);
   line-height: var(--body-line-height);
 }
 
