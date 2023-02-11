@@ -110,22 +110,12 @@
 }
 
 .file {
-  background-color: var(--color-grey-light);
+  margin-top: var(--space-xxs);
+  background-color: var(--color-grey-lighter);
   display: flex;
   align-items: baseline;
-  padding: 0.75rem 1rem;
-  gap: 0.3em;
-
-  &__name {
-    display: flex;
-    gap: 0.3em;
-
-    span {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-  }
+  padding: var(--space-xs);
+  gap: var(--space-xs);
 
   &__remove {
     color: red;
@@ -133,15 +123,20 @@
   }
 
   &__list {
-    background-color: var(--color-grey-light);
+    background-color: var(--color-grey-lighter);
     position: relative;
-    padding: 1rem;
+    padding: var(--space-sm);
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: var(--space-xs);
+    }
 
     &::before {
       content: "";
-      //width: calc(100% - 2rem);
       width: 100%;
-      border-bottom: solid 2px var(--color-blue-lighter);
+      border-bottom: solid 2px var(--color-blue-400);
       position: absolute;
       left: 0;
 

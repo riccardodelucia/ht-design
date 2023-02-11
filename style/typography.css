@@ -135,6 +135,11 @@ p {
   margin-bottom: var(--space-md);
 }
 
+ul,
+ol {
+  list-style-position: inside;
+}
+
 b,
 strong,
 label {
@@ -152,4 +157,5 @@ textarea {
 .link {
   text-decoration: none;
   cursor: pointer;
+  color: inherit;
 }
