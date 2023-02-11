@@ -1,5 +1,6 @@
-///////////////////////////////////////////////
-// INPUT ELEMENTS
+:root {
+  --border-thickness: 3px;
+}
 
 .input-field {
   padding: 0;
@@ -13,7 +14,7 @@
   &__error {
     display: flex;
     align-items: center;
-    gap: 0.3em;
+    gap: var(--space-xs);
     padding-top: var(--space-xxs);
     color: red;
 
@@ -26,36 +27,35 @@
 }
 
 .radio-group {
-  padding: 0 0.5em;
+  margin-top: var(--space-xxs);
   display: flex;
-  gap: 2em;
+  gap: var(--space-md);
   user-select: none;
 
   &__element {
     display: flex;
-    gap: 0.5em;
+    gap: var(--space-sm);
     cursor: pointer;
+    font-weight: var(--font-weight-standard);
   }
 
   &__input {
-    width: 3rem;
-    height: 3rem;
+    width: 30px;
+    height: 30px;
     background-color: white;
     position: relative;
-    display: inline-block;
     border-radius: 50%;
-    border: 2px solid var(--color-blue-lighter);
-    padding: 0.2em;
+    border: var(--border-thickness) solid var(--color-blue-600);
 
     &:after {
       content: "";
       position: absolute;
-      left: 0.5rem;
-      top: 0.5rem;
-      width: 1.6rem;
-      height: 1.6rem;
+      left: 4px;
+      top: 3px;
+      width: 20px;
+      height: 20px;
       border-radius: 50%;
-      background-color: var(--color-blue-lighter);
+      background-color: var(--color-blue-600);
       display: none;
     }
 
@@ -68,11 +68,12 @@
 }
 
 .checkbox {
-  padding: 0 var(--space-xs);
+  margin-top: var(--space-xxs);
   display: flex;
   gap: var(--space-sm);
   cursor: pointer;
   user-select: none;
+  font-weight: var(--font-weight-standard);
 
   &__input {
     width: 3rem;
@@ -81,7 +82,7 @@
     position: relative;
     display: inline-block;
 
-    border: 3px solid var(--color-blue-600);
+    border: var(--border-thickness) solid var(--color-blue-600);
 
     &:after {
       content: "";
@@ -152,21 +153,22 @@
 
 .input,
 .textarea {
+  margin-top: var(--space-xxs);
   padding: var(--space-xs);
   background-color: var(--color-grey-lighter);
 
   width: 100%;
 
   border: none;
-  border-bottom: 3px solid transparent;
+  border-bottom: var(--border-thickness) solid transparent;
   outline: none;
 
   &:focus {
-    border-bottom: 3px solid var(--color-blue-400);
+    border-bottom: var(--border-thickness) solid var(--color-blue-400);
   }
 
   &--error {
-    border-bottom: 3px solid red;
+    border-bottom: var(--border-thickness) solid red;
   }
 
   &::placeholder {
@@ -183,6 +185,7 @@
 }
 
 .select {
+  margin-top: var(--space-xxs);
   position: relative;
   user-select: none;
   background-color: var(--color-grey-lighter);
@@ -191,7 +194,7 @@
   outline: none;
 
   &--error {
-    border-bottom: 3px solid red;
+    border-bottom: var(--border-thickness) solid red;
   }
 
   &__overlay {
@@ -242,7 +245,7 @@
     right: 0;
     z-index: 1;
     background-color: var(--color-grey-light);
-    border: solid 2px var(--color-blue-400);
+    border: var(--border-thickness) solid var(--color-blue-400);
   }
 
   &__option {

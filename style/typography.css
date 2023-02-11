@@ -10,8 +10,8 @@
   --text-base-size: 1.7em;
   --text-scale-ratio: 1.2;
 
-  --color-text-body: var(--color-blue-900);
-  --color-text-heading: var(--color-blue-900);
+  --color-text-body: #1a2e44;
+  --color-text-heading: #1a2e44;
 
   /* text sizes */
   --text-xs: calc(var(--text-sm) * var(--text-scale-ratio));
