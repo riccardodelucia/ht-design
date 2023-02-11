@@ -26,6 +26,7 @@
   border: 2px solid;
   font-size: var(--btn-font-size);
   color: white;
+  font-weight: bold;
 
   transition: 0.2s;
 
@@ -36,72 +37,69 @@
 
 /* themes */
 .btn--primary {
-  // main button
-  background-color: var(--color-blue-400);
-  color: white; //var(--btn-primary-label);
-  border-color: var(--color-blue-400);
+  background-color: var(--color-blue);
+  color: white;
+  border-color: var(--color-blue);
 
   &:visited {
-    color: var(--color-blue-600);
-    border-color: var(--color-blue-600);
+    color: var(--color-blue-dark);
+    border-color: var(--color-blue-dark);
   }
 
   &:hover {
-    background-color: var(--color-blue-600);
-    border-color: var(--color-blue-600);
+    background-color: var(--color-blue-light);
+    border-color: var(--color-blue-light);
   }
 
   &:active {
-    background-color: var(--color-blue-800);
-    border-color: var(--color-blue-800);
+    background-color: var(--color-blue-dark);
+    border-color: var(--color-blue-dark);
   }
 }
 
 .btn--secondary {
-  // main button
-  background-color: var(--color-green-400);
-  color: white; //var(--btn-primary-label);
-  border-color: var(--color-green-400);
+  background-color: var(--color-green);
+  color: white;
+  border-color: var(--color-green);
 
   &:visited {
-    color: var(--color-green-600);
-    border-color: var(--color-green-600);
+    color: var(--color-green-dark);
+    border-color: var(--color-green-dark);
   }
 
   &:hover {
-    background-color: var(--color-green-600);
-    border-color: var(--color-green-600);
+    background-color: var(--color-green-light);
+    border-color: var(--color-green-light);
   }
 
   &:active {
-    background-color: var(--color-green-800);
-    border-color: var(--color-green-800);
+    background-color: var(--color-green-dark);
+    border-color: var(--color-green-dark);
   }
 }
 
 .btn--ghost {
-  // main button
   background-color: transparent;
-  color: var(--color-teal-400);
-  border-color: var(--color-teal-400);
+  color: var(--color-teal);
+  border-color: var(--color-teal);
 
   &:visited {
     color: white;
-    color: var(--color-green-600);
-    background-color: var(--color-teal-600);
-    border-color: var(--color-teal-600);
+    color: var(--color-teal-dark);
+    background-color: var(--color-teal-dark);
+    border-color: var(--color-teal-dark);
   }
 
   &:hover {
     color: white;
-    background-color: var(--color-teal-600);
-    border-color: var(--color-teal-600);
+    background-color: var(--color-teal-light);
+    border-color: var(--color-teal-light);
   }
 
   &:active {
     color: white;
-    background-color: var(--color-teal-800);
-    border-color: var(--color-teal-800);
+    background-color: var(--color-teal-dark);
+    border-color: var(--color-teal-dark);
   }
 }
 

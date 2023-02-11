@@ -45,7 +45,7 @@
     background-color: white;
     position: relative;
     border-radius: 50%;
-    border: var(--border-thickness) solid var(--color-blue-600);
+    border: var(--border-thickness) solid var(--color-blue-light);
 
     &:after {
       content: "";
@@ -55,7 +55,7 @@
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      background-color: var(--color-blue-600);
+      background-color: var(--color-blue-light);
       display: none;
     }
 
@@ -82,7 +82,7 @@
     position: relative;
     display: inline-block;
 
-    border: var(--border-thickness) solid var(--color-blue-600);
+    border: var(--border-thickness) solid var(--color-blue-light);
 
     &:after {
       content: "";
@@ -100,7 +100,7 @@
     }
 
     &--checked {
-      background-color: var(--color-blue-600);
+      background-color: var(--color-blue-light);
 
       &:after {
         display: block;
@@ -136,7 +136,7 @@
     &::before {
       content: "";
       width: 100%;
-      border-bottom: solid 2px var(--color-blue-400);
+      border-bottom: solid var(--border-thickness) var(--color-blue-light);
       position: absolute;
       left: 0;
 
@@ -159,7 +159,7 @@
   outline: none;
 
   &:focus {
-    border-bottom: var(--border-thickness) solid var(--color-blue-400);
+    border-bottom: var(--border-thickness) solid var(--color-blue-light);
   }
 
   &--error {
@@ -240,7 +240,7 @@
     right: 0;
     z-index: 1;
     background-color: var(--color-grey-light);
-    border: var(--border-thickness) solid var(--color-blue-400);
+    border: var(--border-thickness) solid var(--color-blue-light);
   }
 
   &__option {
@@ -249,7 +249,7 @@
     cursor: pointer;
 
     &:hover {
-      background-color: var(--color-blue-600);
+      background-color: var(--color-blue-light);
       color: white;
     }
   }
@@ -286,7 +286,7 @@
     width: 5rem;
     height: 3rem;
     background-color: white;
-    border: 2px solid var(--color-blue-400);
+    border: 2px solid var(--color-blue-light);
     border-radius: 3.4rem;
     position: relative;
 
@@ -298,7 +298,7 @@
       width: 1.8rem;
       height: 1.8rem;
       border-radius: 50%;
-      background-color: var(--color-blue-400);
+      background-color: var(--color-blue-light);
       transition: transform 0.2s ease;
     }
 

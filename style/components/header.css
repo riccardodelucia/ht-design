@@ -1,14 +1,16 @@
 ///////////////////////////////////////////////
 // HEADER
 .header-container {
-  background-image: linear-gradient(
+  background-image: var(
+    --color-gradient-ht-theme
+  ); /* linear-gradient(
     to right,
     var(--color-blue-600) 0%,
     var(--color-blue-400) 35%,
     var(--color-green-400) 65%,
     var(--color-green-600) 100%
   );
-
+ */
   background-size: cover;
   background-repeat: no-repeat;
 }

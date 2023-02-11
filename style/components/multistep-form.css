@@ -27,7 +27,7 @@
   }
 
   &__bar {
-    background-color: var(--color-blue-400);
+    background-color: var(--color-blue);
     width: 0%;
     transition: width 0.3s ease-out;
   }
@@ -46,7 +46,7 @@
     text-align: center;
 
     &--active {
-      background-color: var(--color-blue-400);
+      background-color: var(--color-blue);
       color: white;
       transition-delay: 0;
     }
