@@ -23,9 +23,6 @@
 
   &__nav {
     margin-left: auto;
-    display: flex;
-    align-items: center;
-    gap: var(--space-sm);
   }
 
   &__logo {

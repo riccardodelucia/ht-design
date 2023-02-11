@@ -614,36 +614,24 @@
   position: relative;
   cursor: pointer;
   user-select: none;
-
-  &__name {
-    padding: 0.4em 0.8em;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.3em;
-
-    .user__arrow {
-      width: 0;
-      height: 0;
-      border: 5px solid transparent;
-      border-color: var(--color-text-dark-blue) transparent transparent
-        transparent;
-    }
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-md);
 
   &__menu {
     position: absolute;
     font-weight: normal;
-    border: 1px solid var(--color-text-dark-blue);
-    //left: 0px;
+    border: 1px solid var(--color-text-body);
+    color: var(--color-text-body);
+    top: 100%;
     right: 0px;
-    //height: 4rem;
+    min-width: 100%;
     background-color: #fff;
-    padding: 0.4em 0.8em;
-
+    padding: var(--component-padding);
     a {
       text-decoration: none;
+      cursor: pointer;
     }
 
     a:hover {
