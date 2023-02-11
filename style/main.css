@@ -10,3 +10,8 @@
 @import "components/menu-button";
 @import "components/inputs.css";
 @import "components/multistep-form.css";
+@import "components/user.css";
+@import "components/pagination.css";
+@import "components/footer.css";
+@import "components/datatable.css";
+@import "components/accordion.css";

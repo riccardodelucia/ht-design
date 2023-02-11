@@ -1,33 +1,3 @@
-//////////////////////////////////////////////////////
-// ACCORDION
-.accordion {
-  &__checkbox {
-    display: none;
-  }
-
-  &__label {
-    user-select: none;
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-    cursor: pointer;
-    font-weight: bold;
-  }
-
-  &__collapsible-content {
-    max-height: 0px;
-    overflow: hidden;
-    margin-top: 3rem;
-    transition: max-height 0.25s ease-in-out;
-  }
-}
-
-.accordion__checkbox:checked
-  + .accordion__label
-  + .accordion__collapsible-content {
-  overflow-y: scroll;
-}
-
 /////////////////////////////////////////////////////
 // BASE THUMBNAIL
 .thumbnail {
@@ -70,123 +40,6 @@
   padding: var(--component-padding);
 }
 
-//////////////////////////////////////////////////////
-// DATATABLE
-.datatable {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-
-  &__controls {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  &__search {
-    margin-right: auto;
-  }
-
-  &__select {
-    min-width: 8rem;
-  }
-
-  &__table {
-    overflow: scroll;
-  }
-
-  &__pagination {
-    align-self: flex-end;
-  }
-}
-
-.table {
-  border-collapse: collapse;
-  width: 100%;
-  overflow: hidden;
-  table-layout: fixed;
-
-  &__head {
-    text-align: left;
-  }
-
-  &__head-item {
-    padding: 0.5em;
-    color: var(--color-grey-medium);
-    font-size: 1.5rem;
-
-    cursor: pointer;
-
-    &--sorting,
-    &--sorting-asc,
-    &--sorting-desc {
-      padding-right: 18px;
-      position: relative;
-    }
-
-    &--sorting:before,
-    &--sorting:after,
-    &--sorting-asc:before,
-    &--sorting-asc:after,
-    &--sorting-desc:before,
-    &--sorting-desc:after {
-      border: 4px solid transparent;
-      content: "";
-      display: block;
-      height: 0;
-      right: 5px;
-      top: 50%;
-      position: absolute;
-      width: 0;
-    }
-
-    &--sorting:before {
-      border-bottom-color: var(--color-grey-medium);
-      margin-top: -9px;
-    }
-
-    &--sorting:after {
-      border-top-color: var(--color-grey-medium);
-      margin-top: 1px;
-    }
-
-    &--sorting-asc:before {
-      border-bottom-color: var(--color-grey-medium);
-      margin-top: -9px;
-    }
-
-    &--sorting-desc:after {
-      border-top-color: var(--color-grey-medium);
-      margin-top: 1px;
-    }
-  }
-
-  &__body {
-    & > tr > td {
-      padding: 0.3em 0.5em;
-      text-overflow: ellipsis;
-      overflow: hidden;
-    }
-  }
-
-  &__body > tr > td,
-  &__head-item {
-    border-bottom: 1px solid var(--color-grey-light);
-  }
-
-  &__n-items-selector {
-    background-color: var(--color-grey-light);
-    border: 1px solid var(--color-grey-medium);
-    border-radius: 8px;
-    padding: 0.2em 0.3em;
-    font-size: 1.5rem;
-
-    &:focus {
-      outline: none;
-    }
-  }
-}
-
 /////////////////////////////////////////////////
 // FIXED CONTAINER
 .fixed-container {
@@ -196,30 +49,6 @@
   display: flex;
   flex-direction: column;
   gap: 1em;
-}
-
-/////////////////////////////////////////////////
-// FOOTER
-.footer {
-  background-color: var(--color-blue-700);
-
-  div {
-    margin: auto;
-  }
-
-  &__logo {
-    padding: 2em 3em 0.5em 3em;
-    margin: auto;
-
-    display: block;
-    width: 30rem;
-  }
-
-  &__address {
-    padding: 0.5em 3em 2em 3em;
-    color: #fff;
-    text-align: center;
-  }
 }
 
 /////////////////////////////////////////////////
@@ -398,84 +227,6 @@
 }
 
 ///////////////////////////////////////////////
-// PAGINATION
-.pagination {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 0.5em;
-
-  &__navigation {
-    cursor: pointer;
-  }
-
-  &--disabled {
-    cursor: no-drop;
-    color: var(--color-grey-light);
-  }
-
-  &__page {
-    position: relative;
-    width: 4rem;
-    height: 4rem;
-    cursor: pointer;
-    border-radius: 100px;
-    transition: all 0.3s ease-out;
-    user-select: none;
-    border: 2px solid var(--color-grey-lighter);
-
-    span {
-      font-size: 2rem;
-      display: block;
-      position: absolute;
-      margin-left: auto;
-      margin-right: auto;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    &:hover {
-      background-color: var(--color-blue-light);
-      border: 2px solid var(--color-blue-light);
-
-      color: white;
-    }
-
-    &:active {
-      background-color: var(--color-blue);
-      color: white;
-    }
-
-    &--selected {
-      background-color: var(--color-blue-lighter);
-      border: 2px solid var(--color-blue-lighter);
-
-      span {
-        color: white;
-      }
-    }
-  }
-}
-
-///////////////////////////////////////////////
-// SEARCHBAR
-.search {
-  position: relative;
-
-  input {
-    padding-right: 5rem;
-  }
-
-  &__icon {
-    color: var(--color-grey-dark);
-    position: absolute;
-    right: 1em;
-    top: 0.55em;
-  }
-}
-
-///////////////////////////////////////////////
 // TOGGLE SWITCH
 .toggle {
   display: flex;
@@ -609,45 +360,8 @@
 }
 
 ///////////////////////////////////////////////
-// USER
-.user {
-  position: relative;
-  cursor: pointer;
-  user-select: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: var(--space-md);
-
-  &__menu {
-    position: absolute;
-    font-weight: normal;
-    border: 1px solid var(--color-text-body);
-    color: var(--color-text-body);
-    top: 100%;
-    right: 0px;
-    min-width: 100%;
-    background-color: #fff;
-    padding: var(--component-padding);
-    a {
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    a:link,
-    a:visited {
-      color: inherit;
-    }
-  }
-}
-
-///////////////////////////////////////////////
 // WIDGET
-.widget {
+/* .widget {
   box-shadow: var(--shadow-2);
   padding: 1.5em 1.5em;
   background-color: white;
@@ -662,3 +376,4 @@
     background-color: rgb(163, 210, 253);
   }
 }
+ */

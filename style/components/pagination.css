@@ -1,0 +1,60 @@
+///////////////////////////////////////////////
+// PAGINATION
+.pagination {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: var(--space-md);
+
+  &__navigation {
+    cursor: pointer;
+  }
+
+  &--disabled {
+    cursor: no-drop;
+    color: var(--color-grey-light);
+  }
+
+  &__page {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: all 0.3s ease-out;
+    user-select: none;
+    border: 2px solid var(--color-grey-lighter);
+
+    span {
+      font-size: 2rem;
+      display: block;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+      background-color: var(--color-blue-600);
+      border: 2px solid var(--color-blue-600);
+
+      color: white;
+    }
+
+    &:active {
+      background-color: var(--color-600);
+      color: white;
+    }
+
+    &--selected {
+      background-color: var(--color-blue-400);
+      border: 2px solid var(--color-blue-400);
+
+      span {
+        color: white;
+      }
+    }
+  }
+}

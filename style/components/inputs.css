@@ -254,3 +254,20 @@
     }
   }
 }
+
+///////////////////////////////////////////////
+// SEARCHBAR
+.search {
+  position: relative;
+
+  input {
+    padding-right: var(--space-lg);
+  }
+
+  &__icon {
+    color: var(--color-grey-dark);
+    position: absolute;
+    right: var(--space-xxs);
+    top: var(--space-sm);
+  }
+}

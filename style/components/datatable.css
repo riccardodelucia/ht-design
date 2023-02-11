@@ -1,0 +1,111 @@
+.datatable {
+  &__controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__search {
+    margin-right: auto;
+  }
+
+  &__select {
+    min-width: 8rem;
+  }
+
+  &__table {
+    overflow: scroll;
+  }
+
+  &__pagination {
+    margin-left: auto;
+    width: max-content;
+  }
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  overflow: hidden;
+  table-layout: fixed;
+
+  &__head {
+    text-align: left;
+  }
+
+  &__head-item {
+    padding: 0.5em;
+    color: var(--color-text-body);
+    //font-size: 1.5rem;
+
+    cursor: pointer;
+
+    &--sorting,
+    &--sorting-asc,
+    &--sorting-desc {
+      padding-right: 18px;
+      position: relative;
+    }
+
+    &--sorting:before,
+    &--sorting:after,
+    &--sorting-asc:before,
+    &--sorting-asc:after,
+    &--sorting-desc:before,
+    &--sorting-desc:after {
+      border: 4px solid transparent;
+      content: "";
+      display: block;
+      height: 0;
+      right: 5px;
+      top: 50%;
+      position: absolute;
+      width: 0;
+    }
+
+    &--sorting:before {
+      border-bottom-color: var(--color-grey-medium);
+      margin-top: -9px;
+    }
+
+    &--sorting:after {
+      border-top-color: var(--color-grey-medium);
+      margin-top: 1px;
+    }
+
+    &--sorting-asc:before {
+      border-bottom-color: var(--color-grey-medium);
+      margin-top: -9px;
+    }
+
+    &--sorting-desc:after {
+      border-top-color: var(--color-grey-medium);
+      margin-top: 1px;
+    }
+  }
+
+  &__body {
+    & > tr > td {
+      padding: 0.3em 0.5em;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+
+  &__body > tr > td,
+  &__head-item {
+    border-bottom: 1px solid var(--color-grey-light);
+  }
+
+  &__n-items-selector {
+    background-color: var(--color-grey-light);
+    border: 1px solid var(--color-grey-medium);
+    border-radius: 8px;
+    padding: 0.2em 0.3em;
+    font-size: 1.5rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

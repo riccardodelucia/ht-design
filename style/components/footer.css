@@ -1,0 +1,21 @@
+.footer {
+  background-color: var(--color-blue-700);
+
+  div {
+    margin: auto;
+  }
+
+  &__logo {
+    padding: 2em 3em 0.5em 3em;
+    margin: auto;
+
+    display: block;
+    width: 30rem;
+  }
+
+  &__address {
+    padding: 0.5em 3em 2em 3em;
+    color: #fff;
+    text-align: center;
+  }
+}

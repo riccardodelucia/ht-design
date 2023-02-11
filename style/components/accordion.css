@@ -1,0 +1,27 @@
+.accordion {
+  &__checkbox {
+    display: none;
+  }
+
+  &__label {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  &__collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    margin-top: 3rem;
+    transition: max-height 0.25s ease-in-out;
+  }
+}
+
+.accordion__checkbox:checked
+  + .accordion__label
+  + .accordion__collapsible-content {
+  overflow-y: scroll;
+}
