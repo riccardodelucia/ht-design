@@ -21,7 +21,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  padding: var(--space-xs) var(--space-md);
+  padding: var(--space-sm) var(--space-md);
   border-radius: var(--btn-radius);
   border: 2px solid;
   font-size: var(--btn-font-size);
@@ -47,8 +47,8 @@
   }
 
   &:hover {
-    background-color: var(--color-blue-light);
-    border-color: var(--color-blue-light);
+    background-color: var(--color-blue-dark);
+    border-color: var(--color-blue-dark);
   }
 
   &:active {
@@ -68,8 +68,8 @@
   }
 
   &:hover {
-    background-color: var(--color-green-light);
-    border-color: var(--color-green-light);
+    background-color: var(--color-green-dark);
+    border-color: var(--color-green-dark);
   }
 
   &:active {
@@ -80,8 +80,8 @@
 
 .btn--ghost {
   background-color: transparent;
-  color: var(--color-teal);
-  border-color: var(--color-teal);
+  color: var(--color-teal-light);
+  border-color: var(--color-teal-light);
 
   &:visited {
     color: white;
@@ -92,8 +92,8 @@
 
   &:hover {
     color: white;
-    background-color: var(--color-teal-light);
-    border-color: var(--color-teal-light);
+    background-color: var(--color-teal);
+    border-color: var(--color-teal);
   }
 
   &:active {

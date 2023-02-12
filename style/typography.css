@@ -2,16 +2,16 @@
   --font-primary: "Open Sans";
   --font-secondary: "Poppins";
 
-  --font-weight-light: 400;
-  --font-weight-standard: 500;
+  --font-weight-light: 300;
+  --font-weight-standard: 400;
   --font-weight-bold: 700;
   --font-weight-headings: 600;
 
   --text-base-size: 1.7em;
   --text-scale-ratio: 1.2;
 
-  --color-text-body: #1a2e44;
-  --color-text-heading: #1a2e44;
+  --color-text-body: var(--color-blue-text);
+  --color-text-heading: var(--color-blue-text);
 
   /* text sizes */
   --text-xs: calc(var(--text-sm) * var(--text-scale-ratio));
@@ -21,17 +21,6 @@
   --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
   --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
   --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
-
-  /* margin spacing values */
-  /* --space-xxxs: 0.25em;
-  --space-xxs: 0.375em;
-  --space-xs: 0.5em;
-  --space-sm: 0.75em;
-  --space-md: 1.25em;
-  --space-lg: 2em;
-  --space-xl: 3.25em;
-  --space-xxl: 5.25em;
-  --space-xxxl: 8.5em; */
 
   /* line-height */
   --heading-line-height: 1.4;

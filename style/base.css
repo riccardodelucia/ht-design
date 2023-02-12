@@ -10,11 +10,12 @@
   --color-grey-text: #484848;
 
   // Primary: BLUE
+  --color-blue-text: #15417c;
   --color-blue-darker: #1f59a0;
-  --color-blue-dark: #1f59a0;
-  --color-blue: #007cbd;
-  --color-blue-light: #009de0;
-  --color-blue-lighter: rgb(155, 215, 248);
+  --color-blue-dark: #007cbd;
+  --color-blue: #009de0;
+  --color-blue-light: #4ab4e1;
+  --color-blue-lighter: #b1d4e3;
 
   // Secondary: GREEN
   --color-darker: #6caf51;
@@ -37,15 +38,17 @@
 
   --color-gradient-ht-theme: linear-gradient(
     to right,
-    var(--color-blue-light) 0%,
-    var(--color-blue-lighter) 35%,
-    var(--color-green) 65%,
+    var(--color-blue) 0%,
+    var(--color-blue-light) 15%,
+    var(--color-green) 85%,
     var(--color-green-dark) 100%
   );
 
   --color-content-1: rgb(232, 232, 253);
   --color-content-2: rgb(212, 255, 208);
   --color-content-3: rgb(163, 210, 253);
+
+  --shadow-medium: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 // BASIC CSS RULES

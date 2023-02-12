@@ -1,7 +1,7 @@
 ///////////////////////////////////////////////
 // CARD
 .card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-medium);
   padding: var(--component-padding);
 }
 
