@@ -1,5 +1,7 @@
-///////////////////////////////////////////////
-// PAGINATION
+:root {
+  --pagination-border: 2px;
+}
+
 .pagination {
   display: flex;
   justify-content: space-around;
@@ -23,22 +25,15 @@
     border-radius: 100px;
     transition: all 0.3s ease-out;
     user-select: none;
-    border: 2px solid var(--color-grey-lighter);
-
-    span {
-      font-size: 2rem;
-      display: block;
-      position: absolute;
-      margin-left: auto;
-      margin-right: auto;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
+    border: var(--pagination-border) solid var(--color-grey-lighter);
+    padding: var(--space-xxs);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:hover {
       background-color: var(--color-blue);
-      border: 2px solid var(--color-blue);
+      border-color: var(--color-blue);
 
       color: white;
     }
@@ -50,11 +45,8 @@
 
     &--selected {
       background-color: var(--color-blue);
-      border: 2px solid var(--color-blue);
-
-      span {
-        color: white;
-      }
+      border-color: var(--color-blue);
+      color: white;
     }
   }
 }

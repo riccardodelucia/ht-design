@@ -9,7 +9,7 @@
   --space-xxl: calc(5.25 * var(--space-unit));
 
   --side-spacing: var(--space-md);
-  --web-content-width: calc(1400px + 2 * var(--side-spacing));
+  --web-content-width: calc(140rem + 2 * var(--side-spacing));
   --container-padding: var(--side-spacing);
   --component-padding: var(--space-sm);
 }

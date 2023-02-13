@@ -1,5 +1,5 @@
 :root {
-  --border-thickness: 3px;
+  --input-border: 2px;
 }
 
 .input-field {
@@ -45,15 +45,15 @@
     background-color: white;
     position: relative;
     border-radius: 50%;
-    border: var(--border-thickness) solid var(--color-blue);
+    border: var(--input-border) solid var(--color-blue);
 
     &:after {
       content: "";
       position: absolute;
       left: 4px;
-      top: 3px;
-      width: 20px;
-      height: 20px;
+      top: 4px;
+      width: 18px;
+      height: 18px;
       border-radius: 50%;
       background-color: var(--color-blue);
       display: none;
@@ -82,7 +82,7 @@
     position: relative;
     display: inline-block;
 
-    border: var(--border-thickness) solid var(--color-blue);
+    border: var(--input-border) solid var(--color-blue);
 
     &:after {
       content: "";
@@ -136,7 +136,7 @@
     &::before {
       content: "";
       width: 100%;
-      border-bottom: solid var(--border-thickness) var(--color-blue);
+      border-bottom: solid var(--input-border) var(--color-blue);
       position: absolute;
       left: 0;
 
@@ -155,15 +155,15 @@
   width: 100%;
 
   border: none;
-  border-bottom: var(--border-thickness) solid transparent;
+  border-bottom: var(--input-border) solid transparent;
   outline: none;
 
   &:focus {
-    border-bottom: var(--border-thickness) solid var(--color-blue);
+    border-bottom: var(--input-border) solid var(--color-blue);
   }
 
   &--error {
-    border-bottom: var(--border-thickness) solid red;
+    border-bottom: var(--input-border) solid red;
   }
 
   &::placeholder {
@@ -189,7 +189,7 @@
   outline: none;
 
   &--error {
-    border-bottom: var(--border-thickness) solid red;
+    border-bottom: var(--input-border) solid red;
   }
 
   &__overlay {
@@ -240,7 +240,7 @@
     right: 0;
     z-index: 1;
     background-color: var(--color-grey-light);
-    border: var(--border-thickness) solid var(--color-blue);
+    border: var(--input-border) solid var(--color-blue);
   }
 
   &__option {

@@ -6,21 +6,12 @@
   align-items: center;
   padding: var(--space-md);
   gap: var(--space-md);
-  /* div {
-    margin: auto;
-  }
- */
+
   &__logo {
-    padding: var(--component-padding); // 2em 3em 0.5em 3em;
+    padding: var(--component-padding);
     margin: auto;
 
     display: block;
     width: 20rem;
   }
-
-  /*   &__address {
-    //padding: 0.5em 3em 2em 3em;
-    //color: #fff;
-    text-align: center;
-  } */
 }

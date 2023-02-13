@@ -4,7 +4,8 @@
   --btn-md: calc(var(--btn-font-size) + 0.2em);
   --btn-lg: calc(var(--btn-font-size) + 0.4em);
 
-  --btn-radius: 100px;
+  --btn-radius: 20em;
+  --btn-border: 2px;
 }
 
 .btn {
@@ -15,7 +16,7 @@
   white-space: nowrap;
   text-decoration: none;
   outline: none;
-  line-height: 1;
+  line-height: 1; // to have equal top and bottom spacing
   cursor: pointer;
 
   -webkit-font-smoothing: antialiased;
@@ -23,7 +24,8 @@
 
   padding: var(--space-sm) var(--space-md);
   border-radius: var(--btn-radius);
-  border: 2px solid;
+  border: none;
+  border: var(--btn-border) solid;
   font-size: var(--btn-font-size);
   color: white;
   font-weight: bold;
@@ -127,4 +129,5 @@
   display: flex;
   gap: 1em;
   flex-wrap: wrap;
+  align-items: center; // to prevent different size buttons stretching to same height
 }

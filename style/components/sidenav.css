@@ -2,7 +2,7 @@
   width: 20rem;
   min-height: 100vh;
   color: white;
-  background-color: var(--color-blue-dark);
+  background-color: var(--color-blue-darker);
 
   &__title {
     padding: var(--component-padding);
@@ -19,7 +19,7 @@
     cursor: pointer;
 
     &--active {
-      background-color: var(--color-green);
+      background-color: var(--color-blue);
     }
 
     span {
@@ -29,7 +29,7 @@
 
     &:hover,
     &:focus {
-      background-color: var(--color-green);
+      background-color: var(--color-blue);
       span {
         transform: translateX(0.5em);
         transition: transform 0.3s ease-in-out;
