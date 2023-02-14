@@ -31,11 +31,6 @@
   --color-teal-light: #30ddda;
   --color-teal-lighter: #a2f6f4;
 
-  /*   --color-gradient-blue-0: #008ed3;
-  --color-gradient-blue-100: rgba(0, 173, 238, 1);
-  --color-gradient-green-0: #8bc53f;
-  --color-gradient-green-100: #96c63f; */
-
   --color-gradient-ht-theme: linear-gradient(
     to right,
     var(--color-blue) 0%,
@@ -47,6 +42,8 @@
   --color-content-1: rgb(232, 232, 253);
   --color-content-2: rgb(212, 255, 208);
   --color-content-3: rgb(163, 210, 253);
+  --color-notification-green: rgb(2, 212, 2);
+  --color-notification-red: #fa461d;
 
   --shadow-medium: 0 8px 16px rgba(0, 0, 0, 0.3);
 }

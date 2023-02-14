@@ -1,0 +1,66 @@
+///////////////////////////////////////////////
+// UPLOADS
+.uploads {
+  background-color: white;
+}
+
+.upload-controller {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 5rem 3rem;
+  align-items: center;
+
+  column-gap: var(--space-xs);
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-sm);
+  background-color: white;
+
+  &__icon {
+    grid-column: -2/-1;
+
+    &--delete {
+      color: var(--color-notification-red);
+      cursor: pointer;
+    }
+
+    &--uploaded {
+      color: var(--color-notification-green);
+      cursor: auto;
+    }
+
+    &--remove {
+      color: var(--color-notification-red);
+      cursor: pointer;
+    }
+  }
+
+  &__file {
+    grid-column: 1/ 2;
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+  }
+
+  &__percentage {
+    grid-column: 2/3;
+    font-weight: bold;
+    justify-self: end;
+  }
+
+  &__status {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    font-size: var(--text-sm);
+  }
+
+  &__progress-bar-container {
+    height: 5px;
+    background-color: var(--color-grey-lighter);
+  }
+
+  &__progress-bar {
+    background-color: var(--color-notification-green);
+    height: 5px;
+    transition: width 0.2s ease-in-out;
+  }
+}
