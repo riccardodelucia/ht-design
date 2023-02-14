@@ -141,7 +141,7 @@
       left: 0;
 
       top: -2px;
-      z-index: 1;
+      //z-index: 1;
     }
   }
 }
@@ -203,7 +203,6 @@
   &__input {
     cursor: pointer;
     background-color: var(--color-grey-light);
-    //height: 4.5rem;
   }
 
   &__selection {
@@ -211,7 +210,6 @@
     user-select: none;
     width: 100%;
     position: relative;
-    //height: 4.5rem;
     padding: var(--space-xs);
     line-height: var(--body-line-height);
     white-space: nowrap;

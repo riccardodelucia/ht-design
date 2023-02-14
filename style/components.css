@@ -43,16 +43,13 @@
     flex-shrink: 1;
     flex-basis: v-bind(width);
 
-    //flex: 1 1 120rem;
     margin-left: auto;
     margin-right: auto;
-    //margin-top: 2em;
-    //max-width: 120rem;
     background-color: #ffffff;
     position: relative;
     height: fit-content;
     border-radius: 5px;
-    z-index: 2;
+    z-index: 9;
   }
   &__close {
     position: absolute;
@@ -98,93 +95,6 @@
 }
 
 /////////////////////////////////////////////////
-// NOTIFICATIONS
-.notification {
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 1em;
-
-  &__content {
-    overflow: auto;
-    height: 10rem;
-  }
-
-  &__bar {
-    width: 40rem;
-    padding: 1em 1.2em;
-    position: relative;
-    border-radius: 4px;
-    color: white;
-
-    &--success {
-      background-color: #43d787;
-
-      &__close {
-        border-color: green;
-      }
-      .notification__close:before,
-      .notification__close:after {
-        background-color: green;
-      }
-    }
-
-    &--error {
-      background-color: #fa461d;
-
-      &__close {
-        border-color: red;
-      }
-
-      .notification__close:before,
-      .notification__close:after {
-        background-color: red;
-      }
-    }
-  }
-
-  &__title {
-    font-size: 2rem;
-    font-weight: 600;
-    color: white;
-  }
-
-  &__close {
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    width: 24px;
-    height: 24px;
-    opacity: 0.3;
-    background-color: white;
-    border: 1px solid;
-    border-radius: 100%;
-    cursor: pointer;
-    transition: all 0.1s ease-in;
-
-    &:hover {
-      opacity: 1;
-    }
-
-    &:before,
-    &:after {
-      position: absolute;
-      left: 10px;
-      top: 5px;
-      content: " ";
-      height: 12px;
-      width: 2px;
-      opacity: 0.7;
-    }
-    &:before {
-      transform: rotate(45deg);
-    }
-    &:after {
-      transform: rotate(-45deg);
-    }
-  }
-}
-
-/////////////////////////////////////////////////
 // OVERLAY
 .overlay {
   overflow-y: auto;
@@ -193,6 +103,6 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 9;
+  z-index: 10;
   background-color: rgba(0, 0, 0, 0.8);
 }
