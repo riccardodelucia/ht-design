@@ -44,8 +44,8 @@
   border-color: var(--color-blue);
 
   &:visited {
-    color: var(--color-blue-dark);
-    border-color: var(--color-blue-dark);
+    color: var(--color-blue-darker);
+    border-color: var(--color-blue-darker);
   }
 
   &:hover {
@@ -54,8 +54,8 @@
   }
 
   &:active {
-    background-color: var(--color-blue-dark);
-    border-color: var(--color-blue-dark);
+    background-color: var(--color-blue-darker);
+    border-color: var(--color-blue-darker);
   }
 }
 
@@ -65,8 +65,8 @@
   border-color: var(--color-green);
 
   &:visited {
-    color: var(--color-green-dark);
-    border-color: var(--color-green-dark);
+    color: var(--color-green-darker);
+    border-color: var(--color-green-darker);
   }
 
   &:hover {
@@ -75,8 +75,8 @@
   }
 
   &:active {
-    background-color: var(--color-green-dark);
-    border-color: var(--color-green-dark);
+    background-color: var(--color-green-darker);
+    border-color: var(--color-green-darker);
   }
 }
 

@@ -19,7 +19,7 @@
     cursor: pointer;
 
     &--active {
-      background-color: var(--color-blue);
+      background-color: var(--color-green-dark);
     }
 
     span {
@@ -29,7 +29,7 @@
 
     &:hover,
     &:focus {
-      background-color: var(--color-blue);
+      background-color: var(--color-green-dark);
       span {
         transform: translateX(0.5em);
         transition: transform 0.3s ease-in-out;

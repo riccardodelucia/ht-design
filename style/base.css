@@ -18,7 +18,7 @@
   --color-blue-lighter: #b1d4e3;
 
   // Secondary: GREEN
-  --color-darker: #6caf51;
+  --color-green-darker: #6caf51;
   --color-green-dark: #77c15a;
   --color-green: #83d661;
   --color-green-light: #9add7f;
@@ -56,7 +56,7 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 2000px) {
     font-size: 72.5%;
   }
 }
