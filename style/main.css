@@ -2,7 +2,7 @@
 @import "base.css";
 @import "typography.css";
 @import "spacing.css";
-@import "components.css";
+@import "containers.css";
 @import "components/button";
 @import "components/header";
 @import "components/sidenav";
