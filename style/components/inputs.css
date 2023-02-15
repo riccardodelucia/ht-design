@@ -76,8 +76,8 @@
   font-weight: var(--font-weight-standard);
 
   &__input {
-    width: 3rem;
-    height: 3rem;
+    width: 30px;
+    height: 30px;
     background-color: white;
     position: relative;
     display: inline-block;
@@ -87,12 +87,12 @@
     &:after {
       content: "";
       position: absolute;
-      left: 0.8rem;
-      top: 0.3rem;
-      width: 1rem;
-      height: 1.5rem;
+      left: 8px;
+      top: 3px;
+      width: 10px;
+      height: 15px;
       border: solid white;
-      border-width: 0 4px 4px 0;
+      border-width: 0 3px 3px 0;
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       transform: rotate(45deg);
@@ -140,7 +140,7 @@
       position: absolute;
       left: 0;
 
-      top: -2px;
+      top: -var(--input-border);
       //z-index: 1;
     }
   }
@@ -284,7 +284,7 @@
     width: 5rem;
     height: 3rem;
     background-color: white;
-    border: 2px solid var(--color-blue);
+    border: var(--input-border) solid var(--color-blue);
     border-radius: 3.4rem;
     position: relative;
 

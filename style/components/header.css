@@ -1,16 +1,7 @@
 ///////////////////////////////////////////////
 // HEADER
 .header-container {
-  background-image: var(
-    --color-gradient-ht-theme
-  ); /* linear-gradient(
-    to right,
-    var(--color-blue-600) 0%,
-    var(--color-blue-400) 35%,
-    var(--color-green-400) 65%,
-    var(--color-green-600) 100%
-  );
- */
+  background-image: var(--color-gradient-ht-theme);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -20,7 +11,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 2rem;
+  gap: var(--space-md);
   padding: var(--component-padding);
   font-weight: bold;
 

@@ -7,7 +7,7 @@
     user-select: none;
     display: flex;
     align-items: center;
-    gap: 0.5em;
+    gap: var(--space-xs);
     cursor: pointer;
     font-weight: bold;
   }

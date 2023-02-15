@@ -22,7 +22,7 @@
     width: 4rem;
     height: 4rem;
     cursor: pointer;
-    border-radius: 100px;
+    border-radius: 100%;
     transition: all 0.3s ease-out;
     user-select: none;
     border: var(--pagination-border) solid var(--color-grey-lighter);
