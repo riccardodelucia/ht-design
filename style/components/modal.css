@@ -1,0 +1,41 @@
+.modal {
+  z-index: 11;
+
+  padding: var(--component-padding);
+  width: max-content;
+
+  margin: auto;
+  margin-top: var(--space-lg);
+  background-color: white;
+  position: relative;
+  border-radius: 5px;
+  z-index: 11;
+
+  &__close {
+    opacity: 0.5;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:before,
+    &:after {
+      position: absolute;
+      top: var(--space-md);
+      right: var(--space-lg);
+
+      content: " ";
+      height: 33px;
+      width: 2px;
+      background-color: #333;
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}

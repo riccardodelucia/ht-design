@@ -4,6 +4,7 @@
   width: 100%;
   position: relative;
   color: white;
+  margin-top: var(--space-sm);
   margin-bottom: var(--space-sm);
   z-index: 7;
 

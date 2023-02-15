@@ -167,3 +167,7 @@ textarea {
 .antialiased {
   -webkit-font-smoothing: antialiased;
 }
+
+.center {
+  text-align: center;
+}
