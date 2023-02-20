@@ -108,7 +108,7 @@ small,
 .text--xs,
 h5,
 h6 {
-  letter-spacing: 1px;
+  //letter-spacing: 1px;
 }
 
 p {

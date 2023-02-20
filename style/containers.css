@@ -1,12 +1,12 @@
-///////////////////////////////////////////////
-// CARD
+body {
+  min-height: 100vh;
+}
+
 .card {
   box-shadow: var(--shadow-medium);
   padding: var(--component-padding);
 }
 
-/////////////////////////////////////////////////
-// NOTIFICATIONS CONTAINER
 .notifications-container {
   position: fixed;
   right: 0;
@@ -22,8 +22,6 @@
   }
 }
 
-/////////////////////////////////////////////////
-// OVERLAY
 .overlay {
   overflow-y: auto;
   position: fixed;
@@ -33,4 +31,11 @@
   left: 0;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+.web-container {
+  max-width: var(--web-content-width);
+  margin: 0 auto;
+  padding-left: var(--component-padding);
+  padding-right: var(--component-padding);
 }

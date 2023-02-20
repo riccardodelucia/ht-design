@@ -6,7 +6,8 @@
   align-items: center;
   padding: var(--space-md);
   gap: var(--space-md);
-
+  position: sticky;
+  top: 100%;
   &__logo {
     padding: var(--component-padding);
     margin: auto;
