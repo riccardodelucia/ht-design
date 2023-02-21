@@ -24,8 +24,9 @@
   /* text sizes */
   // these sizes scale according to the default font-size
   // note: the default size is between md and sm
-  --text-xs: calc(var(--text-sm) * var(--text-scale-ratio));
   --text-sm: calc(1em / var(--text-scale-ratio));
+  --text-xs: calc(var(--text-sm) / var(--text-scale-ratio));
+
   --text-md: calc(1em * var(--text-scale-ratio));
   --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
   --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
@@ -103,16 +104,8 @@ small {
   font-size: var(--text-xs);
 }
 
-small,
-.text--sm,
-.text--xs,
-h5,
-h6 {
-  //letter-spacing: 1px;
-}
-
 p {
-  font-size: var(--text-md);
+  //font-size: var(--text-md);
   max-width: 70ch;
 }
 

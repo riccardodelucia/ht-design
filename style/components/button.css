@@ -43,10 +43,10 @@
   color: white;
   border-color: var(--color-blue);
 
-  &:visited {
-    color: var(--color-blue-darker);
-    border-color: var(--color-blue-darker);
-  }
+  /* &:visited {
+    color: var(--color-blue);
+    border-color: var(--color-blue);
+  } */
 
   &:hover {
     background-color: var(--color-blue-dark);
@@ -64,10 +64,10 @@
   color: white;
   border-color: var(--color-green);
 
-  &:visited {
+  /*  &:visited {
     color: var(--color-green-darker);
     border-color: var(--color-green-darker);
-  }
+  } */
 
   &:hover {
     background-color: var(--color-green-dark);
@@ -85,12 +85,12 @@
   color: var(--color-teal-light);
   border-color: var(--color-teal-light);
 
-  &:visited {
+  /* &:visited {
     color: white;
     color: var(--color-teal-dark);
     background-color: var(--color-teal-dark);
     border-color: var(--color-teal-dark);
-  }
+  } */
 
   &:hover {
     color: white;
@@ -119,9 +119,9 @@
 }
 
 .btn--full-width {
-  display: flex;
+  //display: flex;
   width: 100%;
-  justify-content: center;
+  //justify-content: center;
 }
 
 /* button container */
