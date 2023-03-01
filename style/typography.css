@@ -50,7 +50,7 @@ body {
 
 svg {
   * {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -110,11 +110,6 @@ small {
   font-size: var(--text-xs);
 }
 
-p {
-  //font-size: var(--text-md);
-  max-width: 70ch;
-}
-
 b,
 strong,
 label,
@@ -156,17 +151,17 @@ textarea {
 }
 
 // UTILITIES
-.truncate {
+.text-truncate {
   // truncate text if it exceeds parent
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.antialiased {
+.text-antialiased {
   -webkit-font-smoothing: antialiased;
 }
 
-.center {
+.text-center {
   text-align: center;
 }
