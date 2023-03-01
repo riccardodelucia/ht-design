@@ -7,6 +7,6 @@ export default defineConfig({
       entry: path.resolve(__dirname, "index.js"),
       name: "HTDesign",
     },
-    minify: false,
+    minify: true,
   },
 });
