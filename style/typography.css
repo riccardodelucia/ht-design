@@ -11,23 +11,16 @@
   --text-default-size: 1.6rem;
   --text-scale-ratio: 1.25;
 
-  --text-default-size-sm: calc(
-    var(--text-default-size) / var(--text-scale-ratio)
-  );
-  --text-default-size-lg: calc(
-    var(--text-default-size) * var(--text-scale-ratio)
-  );
-
   --color-text-body: var(--color-blue-text);
   --color-text-heading: var(--color-blue-text);
 
   /* text sizes */
   // these sizes scale according to the default font-size
   // note: the default size is between md and sm
-  --text-sm: calc(1em / var(--text-scale-ratio));
+  --text-sm: calc(var(--text-default-size) / var(--text-scale-ratio));
   --text-xs: calc(var(--text-sm) / var(--text-scale-ratio));
 
-  --text-md: calc(1em * var(--text-scale-ratio));
+  --text-md: calc(var(--text-default-size) * var(--text-scale-ratio));
   --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
   --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
   --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
@@ -49,8 +42,10 @@ body {
 }
 
 svg {
-  * {
-    font-size: 1.6rem;
+  text {
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-light);
+    fill: var(--color-text-body);
   }
 }
 

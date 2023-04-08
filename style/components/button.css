@@ -11,7 +11,8 @@
 .btn {
   display: inline-flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: var(--space-sm);
   position: relative;
   white-space: nowrap;
   text-decoration: none;
