@@ -4,7 +4,6 @@
 
 .input-field {
   padding: 0;
-  //padding-bottom: var(--space-md);
   min-width: 5rem;
 
   label {
@@ -52,8 +51,8 @@
       position: absolute;
       left: 4px;
       top: 4px;
-      width: 18px;
-      height: 18px;
+      width: 16px;
+      height: 16px;
       border-radius: 50%;
       background-color: var(--color-blue);
       display: none;
@@ -114,7 +113,7 @@
   background-color: var(--color-grey-lighter);
   display: flex;
   align-items: baseline;
-  padding: var(--space-xs);
+  padding: var(--space-xxs);
   gap: var(--space-xs);
 
   &__remove {
@@ -131,17 +130,6 @@
       display: flex;
       align-items: center;
       gap: var(--space-xs);
-    }
-
-    &::before {
-      content: "";
-      width: 100%;
-      border-bottom: solid var(--input-border) var(--color-blue);
-      position: absolute;
-      left: 0;
-
-      top: -var(--input-border);
-      //z-index: 1;
     }
   }
 }
@@ -184,6 +172,7 @@
   position: relative;
   user-select: none;
   background-color: var(--color-grey-lighter);
+  border-bottom: var(--input-border) solid transparent;
   cursor: pointer;
 
   outline: none;
