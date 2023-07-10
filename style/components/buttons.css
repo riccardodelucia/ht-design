@@ -1,0 +1,79 @@
+:root {
+  --btn-radius: 20em;
+}
+
+.htd-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-3);
+  position: relative;
+  white-space: nowrap;
+  text-decoration: none;
+  line-height: 1; // to have equal top and bottom spacing
+  cursor: pointer;
+
+  padding: 1em 2em;
+  border-radius: var(--btn-radius);
+  border: var(--border-size-2) solid;
+  color: white;
+  font-weight: var(--font-weight-6);
+
+  transition: 0.2s;
+
+  &:active {
+    transition: none;
+  }
+
+  &--primary {
+    background-color: var(--blue-6);
+    color: white;
+    border-color: var(--blue-6);
+
+    &:hover,
+    &:active {
+      background-color: var(--blue-8);
+      border-color: var(--blue-8);
+    }
+  }
+
+  &--secondary {
+    background-color: var(--green-6);
+    color: white;
+    border-color: var(--green-6);
+
+    &:hover,
+    &:active {
+      background-color: var(--green-8);
+      border-color: var(--green-8);
+    }
+  }
+
+  &--ghost {
+    background-color: transparent;
+    color: var(--cyan-4);
+    border-color: var(--cyan-4);
+
+    &:hover,
+    &:active {
+      color: white;
+      background-color: var(--cyan-6);
+      border-color: var(--cyan-6);
+    }
+  }
+
+  &--small {
+    font-size: var(--font-size-0);
+  }
+}
+
+.htd-iconbutton {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+
+  i {
+    display: block;
+  }
+}

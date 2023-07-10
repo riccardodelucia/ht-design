@@ -1,0 +1,45 @@
+.htd-layoutapp {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: min-content 1fr;
+
+  &__header {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  &__sidenav {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+  }
+
+  &__main {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    min-width: 0;
+  }
+
+  &--smallscreen {
+    display: block;
+  }
+}
+
+.htd-layoutweb {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  //grid-template-columns: minmax(0, 1fr);
+  height: 100vh;
+  height: 100dvh; //for corrected viewport height calculations on mobile screens
+
+  &__header {
+    grid-row: 1 / 2;
+  }
+
+  &__main {
+    grid-row: 2 / 3;
+  }
+
+  &__footer {
+    grid-row: 3 / 4;
+  }
+}

@@ -1,4 +1,4 @@
-.datatable {
+.htd-datatable {
   &__controls {
     display: flex;
     flex-wrap: wrap;
@@ -15,27 +15,26 @@
 
   &__table {
     overflow: scroll;
+    border-collapse: collapse;
+    width: 100%;
+    overflow: hidden;
+    table-layout: fixed;
+    margin-bottom: var(--size-3);
   }
 
   &__pagination {
     margin-left: auto;
     width: max-content;
   }
-}
-
-.table {
-  border-collapse: collapse;
-  width: 100%;
-  overflow: hidden;
-  table-layout: fixed;
 
   &__head {
     text-align: left;
+    color: var(--text-2);
   }
 
   &__head-item {
     padding: 0.5em;
-    color: var(--color-text-body);
+    color: var(--text-1);
 
     cursor: pointer;
 
@@ -93,12 +92,12 @@
 
   &__body > tr > td,
   &__head-item {
-    border-bottom: 1px solid var(--color-grey-light);
+    border-bottom: 1px solid var(--gray-2);
   }
 
   &__n-items-selector {
-    background-color: var(--color-grey-light);
-    border: 1px solid var(--color-grey-medium);
+    background-color: var(--gray-4);
+    border: 1px solid var(--gray-5);
     border-radius: 8px;
     padding: 0.2em 0.3em;
     font-size: 1.5rem;

@@ -1,27 +1,27 @@
-.accordion {
-  &__checkbox {
-    display: none;
+.htd-accordion {
+  overflow: hidden;
+  padding: var(--size-2) var(--size-3);
+
+  &__heading {
+    font-size: var(--font-size-2);
+    margin-bottom: var(--size-3);
   }
 
-  &__label {
-    user-select: none;
+  &__content {
+    height: 0;
+    overflow-y: scroll;
+
+    &--open {
+      height: max-content;
+      max-height: 100vh;
+    }
+  }
+
+  &__button {
+    background-color: transparent;
+    border: none;
     display: flex;
-    align-items: center;
-    gap: var(--space-xs);
+    gap: var(--size-2);
     cursor: pointer;
-    font-weight: bold;
   }
-
-  &__collapsible-content {
-    max-height: 0px;
-    overflow: hidden;
-    margin-top: 3rem;
-    transition: max-height 0.25s ease-in-out;
-  }
-}
-
-.accordion__checkbox:checked
-  + .accordion__label
-  + .accordion__collapsible-content {
-  overflow-y: scroll;
 }

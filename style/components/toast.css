@@ -1,14 +1,13 @@
 /////////////////////////////////////////////////
 // TOAST
-.toast {
+.htd-toast {
   width: 100%;
   position: relative;
   color: white;
-  margin-top: var(--space-sm);
-  margin-bottom: var(--space-sm);
-  z-index: 7;
+  z-index: var(--layer-1);
+  color: white;
 
-  h4 {
+  h6 {
     color: white;
   }
 
@@ -19,20 +18,20 @@
   }
 
   &--success {
-    background-color: var(--color-notification-green);
+    background-color: var(--green-4);
 
-    .toast__close:before,
-    .toast__close:after {
-      background-color: green;
+    .htd-toast__close:before,
+    .htd-toast__close:after {
+      background-color: var(--green-8);
     }
   }
 
   &--error {
-    background-color: var(--color-notification-red);
+    background-color: var(--red-6);
 
-    .toast__close:before,
-    .toast__close:after {
-      background-color: red;
+    .htd-toast__close:before,
+    .htd-toast__close:after {
+      background-color: var(--red-6);
     }
   }
 

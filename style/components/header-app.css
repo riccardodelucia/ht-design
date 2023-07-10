@@ -1,0 +1,35 @@
+///////////////////////////////////////////////
+// HEADER
+
+.htd-headerapp {
+  padding-inline: var(--size-3);
+  position: relative;
+  min-height: 4rem;
+  background-color: var(--surface-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &::after {
+    content: "";
+    height: var(--size-1);
+    width: 100%;
+    background-image: var(--htd-gradient);
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
+
+  nav {
+    margin-left: auto;
+    ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: var(--size-5);
+    }
+  }
+}
