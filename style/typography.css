@@ -1,162 +1,39 @@
-:root {
-  --font-primary: "Raleway";
-  --font-secondary: "Poppins";
-
-  --font-weight-light: 300;
-  --font-weight-standard: 400;
-  --font-weight-bold: 700;
-  --font-weight-headings: 600;
-
-  // 1.6rem = 16px with html font-size: 62.5%;
-  --text-default-size: 1.6rem;
-  --text-scale-ratio: 1.25;
-
-  --color-text-body: var(--color-blue-text);
-  --color-text-heading: var(--color-blue-text);
-
-  /* text sizes */
-  // these sizes scale according to the default font-size
-  // note: the default size is between md and sm
-  --text-sm: calc(var(--text-default-size) / var(--text-scale-ratio));
-  --text-xs: calc(var(--text-sm) / var(--text-scale-ratio));
-
-  --text-md: calc(var(--text-default-size) * var(--text-scale-ratio));
-  --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
-  --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
-  --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
-  --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
-
-  /* line-height */
-  --heading-line-height: 1.2;
-  --body-line-height: 1.6;
+:where(h1, h2, h3, h4, h5, h6) {
+  font-weight: var(--font-weight-7);
+  line-height: var(--font-lineheight-1);
+  color: var(--text-2);
 }
 
-body {
-  font-size: var(--text-default-size);
-  font-family: var(--font-primary);
-  font-weight: var(--font-weight-standard);
-  color: var(--color-text-body);
-  text-rendering: optimizeLegibility;
-  //-webkit-font-smoothing: antialiased;
-  line-height: var(--body-line-height);
+:where(h1) {
+  font-size: var(--font-size-8);
+  //line-height: var(--font-lineheight-0);
 }
 
-svg {
-  text {
-    font-size: var(--text-sm);
-    font-weight: var(--font-weight-light);
-    fill: var(--color-text-body);
-  }
+:where(h2) {
+  font-size: var(--font-size-7);
+  //line-height: var(--font-lineheight-0);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-form legend {
-  color: var(--color-text-heading);
-  margin-bottom: var(--space-xxs);
-  line-height: var(--heading-line-height);
-  text-rendering: optimizeLegibility;
-  font-weight: var(--font-weight-headings);
-  font-family: var(--font-secondary);
+:where(h3) {
+  font-size: var(--font-size-6);
+  //line-height: var(--font-lineheight-0);
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: var(--space-sm);
+:where(h4) {
+  font-size: var(--font-size-5);
+  //line-height: var(--font-lineheight-1);
 }
 
-.text--xxxl {
-  font-size: var(--text-xxxl);
+:where(h5) {
+  font-size: var(--font-size-4);
+  //line-height: var(--font-lineheight-1);
 }
 
-h1,
-.text--xxl {
-  font-size: var(--text-xxl);
+:where(h6) {
+  font-size: var(--font-size-3);
+  //line-height: var(--font-lineheight-1);
 }
 
-h2,
-.text--xl {
-  font-size: var(--text-xl);
-}
-
-h3,
-.text--lg {
-  font-size: var(--text-lg);
-}
-
-h4,
-.text--md {
-  font-size: var(--text-md);
-}
-
-.text--sm,
-small {
-  font-size: var(--text-sm);
-}
-
-.text--xs {
-  font-size: var(--text-xs);
-}
-
-b,
-strong,
-label,
-ul,
-ol,
-p {
-  line-height: var(--body-line-height);
-}
-
-ul,
-ol,
-p {
-  margin-bottom: var(--space-md);
-}
-
-ul,
-ol {
-  list-style-position: inside;
-}
-
-b,
-strong,
-label {
-  font-weight: bold;
-}
-
-input,
-textarea {
-  font-family: inherit;
-  font-size: inherit;
-  color: var(--color-text-body);
-  line-height: var(--body-line-height);
-}
-
-.link {
-  text-decoration: none;
-  cursor: pointer;
-  color: inherit;
-}
-
-// UTILITIES
-.text-truncate {
-  // truncate text if it exceeds parent
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.text-antialiased {
-  -webkit-font-smoothing: antialiased;
-}
-
-.text-center {
-  text-align: center;
+svg text {
+  font-size: 0.8rem;
 }

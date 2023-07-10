@@ -1,35 +1,31 @@
 ///////////////////////////////////////////////
 // UPLOADS
-.uploads {
-  background-color: white;
-}
 
-.upload-controller {
+.htd-uploadcontroller {
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 5rem 3rem;
   align-items: center;
 
-  column-gap: var(--space-xs);
-  margin-top: var(--space-xs);
-  margin-bottom: var(--space-sm);
-  background-color: white;
+  column-gap: var(--size-2);
+  margin-top: var(--size-2);
+  margin-bottom: var(--size-3);
 
   &__icon {
     grid-column: -2/-1;
 
     &--delete {
-      color: var(--color-notification-red);
+      color: var(--red-6);
       cursor: pointer;
     }
 
     &--uploaded {
-      color: var(--color-notification-green);
+      color: var(--green-6);
       cursor: auto;
     }
 
     &--remove {
-      color: var(--color-notification-red);
+      color: var(--red-6);
       cursor: pointer;
     }
   }
@@ -38,7 +34,7 @@
     grid-column: 1/ 2;
     display: flex;
     align-items: center;
-    gap: var(--space-xs);
+    gap: var(--size-2);
   }
 
   &__percentage {
@@ -53,13 +49,13 @@
     font-size: var(--text-sm);
   }
 
-  &__progress-bar-container {
+  &__progressbarcontainer {
     height: 5px;
-    background-color: var(--color-grey-lighter);
+    background-color: var(--gray-4);
   }
 
-  &__progress-bar {
-    background-color: var(--color-notification-green);
+  &__progressbar {
+    background-color: var(--green-6);
     height: 5px;
     transition: width 0.2s ease-in-out;
   }

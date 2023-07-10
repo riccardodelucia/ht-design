@@ -2,11 +2,11 @@
   --pagination-border: 2px;
 }
 
-.pagination {
+.htd-pagination {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: var(--space-md);
+  gap: var(--size-4);
 
   &__navigation {
     cursor: pointer;
@@ -14,38 +14,37 @@
 
   &--disabled {
     cursor: no-drop;
-    color: var(--color-grey-light);
   }
 
   &__page {
     position: relative;
-    width: 4rem;
-    height: 4rem;
+    width: 2.5rem;
+    height: 2.5rem;
     cursor: pointer;
     border-radius: 100%;
     transition: all 0.3s ease-out;
     user-select: none;
-    border: var(--pagination-border) solid var(--color-grey-lighter);
-    padding: var(--space-xxs);
+    border: var(--pagination-border) solid var(--gray-4);
+    padding: var(--size-1);
     display: flex;
     align-items: center;
     justify-content: center;
 
     &:hover {
-      background-color: var(--color-blue);
-      border-color: var(--color-blue);
+      background-color: var(--blue-4);
+      border-color: var(--blue-4);
 
       color: white;
     }
 
     &:active {
-      background-color: var(--color);
+      background-color: var(--blue-4);
       color: white;
     }
 
     &--selected {
-      background-color: var(--color-blue);
-      border-color: var(--color-blue);
+      background-color: var(--blue-6);
+      border-color: var(--blue-6);
       color: white;
     }
   }
