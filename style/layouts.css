@@ -1,45 +1,98 @@
-.htd-layoutapp {
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  grid-template-rows: min-content 1fr;
-
-  &__header {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-  }
-
-  &__sidenav {
-    grid-column: 1 / 2;
-    grid-row: 1 / -1;
-  }
-
-  &__main {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    min-width: 0;
-  }
-
-  &--smallscreen {
-    display: block;
-  }
+/************************************************************************/
+/* WRAPPER FOR LARGE SCREENS                                            */
+/************************************************************************/
+.ht-wrapper{
+  width: min(var(--width, 80rem), 100% - 2em);
+  margin-inline: auto;
 }
 
-.htd-layoutweb {
+/************************************************************************/
+/* FLEX                                                                 */
+/************************************************************************/
+/*
+ * Please Note: these classes should be used AS THEY ARE. Think of them as ways to quickly setup layouts.
+ * If you need something more customized, start from scratch from a custon class and declare all flex needed proerties inside it.
+ */
+
+.ht-flex {
+  display: flex;
+  gap: var(--gap, 1em);
+}
+
+.ht-flex-justify-center{
+  display: flex;
+  gap: var(--gap, 1em);
+  justify-content: center;
+}
+
+.ht-flex-align-center {
+  display: flex;
+  gap: var(--gap, 1em);
+  align-items: center;
+}
+
+.ht-flex-center-xy {
+  display: flex;
+  gap: var(--gap, 1em);
+  align-items: center;
+  justify-content: center;
+}
+
+/************************************************************************/
+/* STACK                                                                */
+/************************************************************************/
+.ht-layout-stack > * + * {
+  margin-top: var(--gap, 1em);
+}
+
+/************************************************************************/
+/* GRID                                                                 */
+/************************************************************************/
+.ht-grid-auto {
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  //grid-template-columns: minmax(0, 1fr);
-  height: 100vh;
-  height: 100dvh; //for corrected viewport height calculations on mobile screens
+  --default-gap: 1rem;
+  --_gap: var(--gap, var(--default-gap));
+  column-gap: var(--column-gap, var(--_gap));
+  row-gap: var(--row-gap,  var(--_gap));
+  grid-template-columns: repeat(var(--grid-placement, auto-fill), minmax(var(--grid-min-item-size, 16rem), 1fr));
+}
 
-  &__header {
-    grid-row: 1 / 2;
-  }
+// These classes are meant to center one single child block, DO NOT USE THEM AS STANDARD GRID LAYOUTS
+.ht-grid-justify-center {
+  display: grid;
+  justify-items: center;
+}
 
-  &__main {
-    grid-row: 2 / 3;
-  }
+.ht-grid-align-center {
+  display: grid;
+  align-items: center;
+}
 
-  &__footer {
-    grid-row: 3 / 4;
+.ht-grid-center-xy {
+  display: grid;
+  place-items: center;
+}
+
+/************************************************************************/
+/* FORM GROUP                                                           */
+/************************************************************************/
+// Apply this class whenever you want to activate a form-like layout, with correctly vertically stacked input elements
+.ht-formgroup {
+
+  display: grid;
+  row-gap: var(--gap, .2rem);
+
+  // Do not apply stack layouts among formgroup elements, use --formgroup-bottom-spacing to create vertical rythm
+  --small-font-size: var(--font-size-0);
+  --small-spacing: calc(2 * var(--small-font-size));
+
+  padding-bottom: var(--small-spacing);
+  position: relative;
+
+  small {
+    position:absolute;
+    bottom: calc(var(--small-spacing) / 4);
+    left: 0;
+    font-size: var(--small-font-size);
   }
 }

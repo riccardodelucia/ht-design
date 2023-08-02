@@ -1,7 +1,7 @@
 {
   "name": "@computational-biology-sw-web-dev-unit/ht-design",
   "author": "Human Technopole SW and Web Unit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "files": [
     "dist/style.css"
@@ -19,6 +19,7 @@
     "postcss-comment": "^2.0.0",
     "postcss-import": "^15.0.0",
     "postcss-nested": "^6.0.0",
+    "prettier": "^3.0.0",
     "vite": "^3.2.3"
   },
   "dependencies": {
