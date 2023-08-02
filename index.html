@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HT Design</title>
+  <style>
+    #main {
+      padding-block: 5rem;
+    }
+
+    .prose>h1 {
+      font-size: var(--font-size-8);
+    }
+
+    .prose>h2 {
+      font-size: var(--font-size-5);
+    }
+
+    .prose>h3 {
+      font-size: var(--font-size-4);
+    }
+
+    .prose>h1,
+    .prose>h2 {
+      font-family: var(--font-mono);
+    }
+
+    .prose>h1,
+    .prose>h2,
+    .prose>h3 {
+      text-transform: uppercase;
+      color: var(--ht-text-color-2);
+    }
+
+    .prose .ht-container {
+      --container-padding-block: .5em;
+      --container-padding-inline: 1em;
+    }
+
+    .prose .ht-grid-auto {
+      --grid-min-item-size: 10rem;
+    }
+
+    .form .ht-formgroup {
+      --formgroup-bottom-spacing: .2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="ht-layout-stack ht-wrapper prose" id="main">
+    <img src="/HT_logo.svg" alt="HT Logo" width="200px" />
+    <h1 class="">
+      Design System
+    </h1>
+    <h2>Color Scheme</h2>
+    <div class="ht-layout-stack">
+      <input id="color-scheme-toggle" role="switch" type="checkbox" />
+      <label for="color-scheme-toggle">Toggle Color Scheme</label>
+    </div>
+    <h2>Shapes</h2>
+    <div class="ht-grid-auto">
+      <div class="ht-card ht-container">
+        Card
+      </div>
+      <div class="ht-circle ht-container">
+        Circle
+      </div>
+    </div>
+    <h2>Colors</h2>
+    <h3>
+      Cards with Surfaces
+    </h3>
+    <div class="ht-grid-auto">
+      <div class="ht-card ht-container" style="background-color: var(--ht-surface-1)">
+        ht-surface-1
+      </div>
+      <div class="ht-card ht-container" style="background-color: var(--ht-surface-2)">
+        ht-surface-2
+      </div>
+      <div class="ht-card ht-container" style="background-color: var(--ht-surface-3)">
+        ht-surface-3
+      </div>
+      <div class="ht-card ht-container" style="background-color: var(--ht-surface-4)">
+        ht-surface-4
+      </div>
+    </div>
+    <h3>Brand Colors</h3>
+    <div class=" ht-container ht-skin-brand-gradient">Gradient</div>
+    <div class="ht-flex-align-center">
+      <div class="ht-container"
+        style="flex-grow: 1; background-color: var(--ht-color-brand-blue-1)">
+        <p>Blue 1</p>
+      </div>
+      <div class="ht-container"
+        style="flex-grow: 1; background-color: var(--ht-color-brand-blue-2)">
+        <p>Blue 2</p>
+      </div>
+      <div class="ht-container"
+        style="flex-grow: 1; background-color: var(--ht-color-brand-blue-3)">
+        <p>Blue 3</p>
+      </div>
+      <div class="ht-container"
+        style="flex-grow: 1; background-color: var(--ht-color-brand-green-1)">
+        <p>Green 1</p>
+      </div>
+      <div class="ht-container"
+        style="flex-grow: 1; background-color: var(--ht-color-brand-teal-1)">
+        <p>Teal 1</p>
+      </div>
+    </div>
+    <h3>Main Colors</h3>
+    <div class="ht-grid-auto">
+      <div class="ht-container" style="background-color: var(--ht-color-primary)">
+        <p>Primary</p>
+      </div>
+      <div class="ht-container" style="background-color: var(--ht-color-secondary)">
+        <p>Secondary</p>
+      </div>
+      <div class="ht-container" style="background-color: var(--ht-color-tertiary)">
+        <p>Tertiary</p>
+      </div>
+    </div>
+    <h3>Other Colors</h3>
+    <div class="ht-grid-auto">
+      <div class="ht-container" style="background-color: var(--ht-color-green)">
+        <p>Color Green</p>
+      </div>
+      <div class="ht-container" style="background-color: var(--ht-color-red)">
+        <p>Color Red</p>
+      </div>
+      <div class="ht-container" style="background-color: var(--ht-color-gray-1)">
+        <p>Color Gray 1</p>
+      </div>
+      <div class="ht-container" style="background-color: var(--ht-color-gray-2)">
+        <p>Color Gray 2</p>
+      </div>
+      <div class="ht-container" style="background-color: var(--ht-color-gray-3)">
+        <p>Color Gray 3</p>
+      </div>
+    </div>
+    <h2>
+      Notifications
+    </h2>
+    <div class="ht-layout-stack">
+      <div class="ht-toast">
+        <h2>Success</h2>
+        <button class="ht-reset" type="button" aria-label="Close">
+        </button>
+        <p>Success message</p>
+      </div>
+      <div class="ht-toast" data-type="error">
+        <h2>Error</h2>
+        <button class="ht-reset" type="button" aria-label="Close"></button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit accusamus, officiis quos
+          voluptatem quam tempora perferendis? A reprehenderit provident ut tempore esse officia cum sit assumenda nisi!
+          Molestias quidem tempora eum cumque tempore. Dolore facilis aperiam quas doloribus et sequi ex aut debitis
+          magni eos quam, culpa velit ipsam deleniti dolorem perferendis quos delectus amet illum! Praesentium expedita
+          omnis nulla maiores atque accusamus laborum doloribus laudantium sequi, deserunt magnam dolores dolor a
+          assumenda velit delectus minima ducimus quam maxime. Corrupti perferendis cum natus aliquid est ea deserunt
+          cumque fugit beatae molestiae id reprehenderit numquam omnis, voluptatem vel rerum at fuga adipisci. Nostrum
+          numquam adipisci alias tempore voluptas saepe tenetur recusandae modi architecto porro perspiciatis
+          repellendus nulla neque quae, rerum iusto ab, labore beatae quisquam inventore ipsum eaque excepturi
+          laudantium. Nesciunt a similique itaque possimus quam magnam sed necessitatibus placeat provident ipsam. Modi
+          ratione officiis aut ipsa, commodi aliquam odit, molestiae accusantium accusamus eius vitae explicabo
+          corporis, pariatur nostrum ipsam quas vero error. Itaque ullam assumenda voluptas culpa, sed omnis velit, a
+          rerum vero ipsum voluptatem illo quas veritatis veniam voluptate repudiandae modi enim tempora dolorem.
+          Tenetur cupiditate iusto placeat fugiat rerum! Beatae inventore alias, quas ex temporibus possimus fuga porro
+          consectetur impedit, saepe aliquid iste perferendis exercitationem. Quasi, labore quisquam laudantium ex
+          molestias aperiam adipisci iure nesciunt nobis voluptatem delectus tempore deleniti error dolorem eligendi
+          eius? Asperiores quos unde expedita suscipit, autem illo quod in dignissimos? Repellat quasi odit consequatur
+          nihil ut enim velit. </p>
+      </div>
+    </div>
+    <h2>
+      Typography
+    </h2>
+    <h3>Font Families</h3>
+    <p style="font-family: var(--font-mono)">Font mono</p>
+    <p style="font-family: var(--font-sans)">Font sans</p>
+    <p style="font-family: var(--font-serif)">Font serif</p>
+    <h3>Standard paragraph</h3>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est non
+      libero fugiat iste laudantium et, assumenda optio pariatur? Eum quasi
+      odio earum ut. Cupiditate, tenetur consequuntur. Inventore quia
+      quaerat doloremque?
+    </p>
+    <h3>Standard textual link</h3>
+    <p>
+      This is a <a href="#">link</a>
+    </p>
+    <h2>Buttons</h2>
+    <div class="ht-flex-align-center ht-flex-wrap">
+      <button type="button">Primary</button>
+      <button type="button" data-type="secondary">
+        Secondary
+      </button>
+      <button type="button" data-type="ghost">
+        Ghost
+      </button>
+    </div>
+    <h3>Custom sizes</h3>
+    <div class="ht-flex-align-center ht-flex-wrap">
+      <button type="button" style="--padding-inline: 4em">
+        padding-inline: 4em
+      </button>
+      <button type="button" style="--padding-block: 2em">
+        padding-block: 2em
+      </button>
+      <button type="button" style="--font-size: var(--font-size-6)">
+        font-size 6
+      </button>
+    </div>
+    <h2>
+      Form Input Elements
+    </h2>
+    <form class="form">
+      <div class="ht-formgroup" >
+        <label for="input-standard">Standard input</label>
+        <input type="text" id="input-standard" placeholder="placeholder" />
+      </div>
+      <div class="ht-formgroup">
+        <label for="input-error">Invalid input</label>
+        <input type="text" id="input-error" aria-invalid="true" placeholder="placeholder" />
+        <small class="ht-error-message">Error message</small>
+      </div>
+      <div class="ht-formgroup">
+        <label for="input-textarea">Textarea</label>
+        <textarea id="input-textarea" placeholder="placeholder"></textarea>
+      </div>
+      <div class="ht-formgroup">
+        <label for="input-select">Select</label>
+        <select id="input-select" value="">
+          <optgroup>
+            <option disabled value="">Please select one</option>
+            <option value="value 1">
+              value 1
+            </option>
+               <option value="value 2">
+              value 2
+            </option>
+          </optgroup>
+        </select>
+        <small class="ht-error-message">Error message</small>
+      </div>
+      <div class="ht-formgroup">
+        <label for="input-file">File Input</label>
+        <input id="input-file" type="file" />
+        <small class="ht-error-message">Error message</small>
+      </div>
+      <div class="ht-formgroup">
+        <p>Checkbox</p>
+        <div>
+          <input id="input-checkbox" type="checkbox"/>
+          <label for="input-checkbox">Click to un/check</label>
+        </div>
+        <small class="ht-error-message">Error message</small>
+      </div>
+      <div class="ht-formgroup">
+        <p>Radio Group</p>
+        <div class="ht-radiogroup">
+          <div>
+            <input id="radio-option-1" type="radio" value="option 1" name="radio-group" checked />
+            <label for="radio-option-1">Option 1</label>
+          </div>
+          <div>
+            <input id="radio-option-2" type="radio" value="option 2" name="radio-group" />
+            <label for="radio-option-2">Option 2</label>
+          </div>
+        </div>
+        <small class="ht-error-message">Error message</small>
+      </div>
+      <div class="ht-formgroup">
+        <p>Switch</p>
+        <div>
+          <input id="input-switch" role="switch" checked type="checkbox" />
+          <label for="input-switch">Click to toggle</label>
+        </div>
+        <small class="ht-error-message">Error message</small>
+      </div>
+      <div class="ht-formgroup">
+        <label for="input-progress">Progress</label>
+        <progress id="input-progress" max="100" value="70" >70%</progress>
+      </div>
+    </form>
+    <h2>
+      Indicators
+    </h2>
+    <h3>Number Indicators</h3>
+    <div>
+      <ol class="ht-layout-stack">
+        <li class="ht-flex-align-center"><span
+            class="ht-number-indicator" aria-current="true">1</span><span>Currently Selected</span></li>
+        <li class="ht-flex-align-center"><span
+              class="ht-number-indicator">2</span><span>Standard</span></li>
+        <li class="ht-flex-align-center"><span
+            class="ht-number-indicator" style="--size: 5rem">3</span><span>Standard, with custom size</span></li>
+        <li class="ht-flex-align-center"><span
+            class="ht-number-indicator" aria-disabled="true">4</span><span>Disabled</span></li>
+      </ol>
+    </div>
+    <h2>
+      Dialog
+    </h2>
+    <div>
+      <button id="dialog-open" type="button">Click to open the dialog example window</button>
+      <dialog id="dialog">
+        <form class="ht-layout-stack">
+          <h2>Test Modal</h2>
+          <p>Close by either press the <i>Cancel</i> button or press <i>Esc</i> key</p>
+          <button id="dialog-close" formmethod="dialog">Cancel</button>
+        </form>
+      </dialog>
+    </div>
+    <h2>
+      Margin Sizes
+    </h2>
+    <div style="margin-bottom: var(--size-1); background-color: var(--ht-color-tertiary);">Margin Bottom 1</div>
+    <div style="margin-bottom: var(--size-2); background-color: var(--ht-color-tertiary);">Margin Bottom 2</div>
+    <div style="margin-bottom: var(--size-3); background-color: var(--ht-color-tertiary);">Margin Bottom 3</div>
+    <div style="margin-bottom: var(--size-4); background-color: var(--ht-color-tertiary);">Margin Bottom 4</div>
+    <div style="margin-bottom: var(--size-5); background-color: var(--ht-color-tertiary);">Margin Bottom 5</div>
+    <div style="margin-bottom: var(--size-6); background-color: var(--ht-color-tertiary);">Margin Bottom 6</div>
+    <div style="margin-bottom: var(--size-7); background-color: var(--ht-color-tertiary);">Margin Bottom 7</div>
+    <div style="margin-bottom: var(--size-8); background-color: var(--ht-color-tertiary);">Margin Bottom 8</div>
+    <div style="margin-bottom: var(--size-9); background-color: var(--ht-color-tertiary);">Margin Bottom 9</div>
+    <div style="margin-bottom: var(--size-10); background-color: var(--ht-color-tertiary);">Margin Bottom 10</div>
+    <div style="margin-bottom: var(--size-11); background-color: var(--ht-color-tertiary);">Margin Bottom 11</div>
+    <div style="margin-bottom: var(--size-12); background-color: var(--ht-color-tertiary);">Margin Bottom 12</div>
+    <div style="margin-bottom: var(--size-13); background-color: var(--ht-color-tertiary);">Margin Bottom 13</div>
+    <div style="margin-bottom: var(--size-14); background-color: var(--ht-color-tertiary);">Margin Bottom 14</div>
+    <div style="margin-bottom: var(--size-15); background-color: var(--ht-color-tertiary);">Margin Bottom 15</div>
+    <hr>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+    <script>
+      const toggle = document.querySelector("#color-scheme-toggle");
+      toggle.addEventListener("click", () => {
+        console.log(toggle.checked);
+        if (toggle.checked) {
+          document.documentElement.classList.add('ht-darkmode');
+        } else {
+          document.documentElement.classList.remove('ht-darkmode');
+        }
+      })
+
+      const dialog = document.querySelector("#dialog");
+      const body = document.querySelector("body");
+
+      const dialogOpen = document.querySelector("#dialog-open");
+      dialogOpen.addEventListener("click", () => {
+        body.classList.add("ht-prevent-scroll");
+        dialog.showModal()
+      })
+
+      const dialogClose = document.querySelector("#dialog-close");
+      dialog.addEventListener("close", () => {
+        body.classList.remove("ht-prevent-scroll");
+        dialog.returnValue = null;
+      })
+
+    </script>
+</body>
+
+</html>

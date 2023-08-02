@@ -1,39 +1,32 @@
-:where(h1, h2, h3, h4, h5, h6) {
-  font-weight: var(--font-weight-7);
-  line-height: var(--font-lineheight-1);
-  color: var(--text-2);
-}
-
-:where(h1) {
-  font-size: var(--font-size-8);
-  //line-height: var(--font-lineheight-0);
-}
-
-:where(h2) {
-  font-size: var(--font-size-7);
-  //line-height: var(--font-lineheight-0);
-}
-
-:where(h3) {
-  font-size: var(--font-size-6);
-  //line-height: var(--font-lineheight-0);
-}
-
-:where(h4) {
-  font-size: var(--font-size-5);
-  //line-height: var(--font-lineheight-1);
-}
-
-:where(h5) {
-  font-size: var(--font-size-4);
-  //line-height: var(--font-lineheight-1);
-}
-
-:where(h6) {
-  font-size: var(--font-size-3);
-  //line-height: var(--font-lineheight-1);
-}
-
+html,
 svg text {
-  font-size: 0.8rem;
+  font-family: var(--font-sans);
+  line-height: var(--font-lineheight-4);
+}
+
+html {
+  color: var(--ht-text-color-1);
+}
+
+svg.ht-chart text {
+  color: var(--text-color-1-light);
+}
+
+// NOTE: heading tags should have a semantic meaning. There is no point in styling them without knowing the context
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: var(--font-weight-4);
+}
+
+body {
+  line-height: var(--font-lineheight-4);
+}
+
+.ht-error-message {
+  color: var(--ht-color-red);
 }

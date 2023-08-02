@@ -1,0 +1,137 @@
+:root {
+  --ht-color-brand-gradient: linear-gradient(
+    to right,
+    rgba(0, 142, 211, 1) 0%,
+    rgba(0, 173, 238, 1) 14%,
+    rgba(139, 197, 63, 1) 88%,
+    rgba(139, 197, 63, 1) 100%
+  );
+
+  // REFERENCE COLORS
+  --ht-color-brand-blue-1: hsl(213 68% 37%); //#1e589f
+  --ht-color-brand-blue-2: hsl(201 100% 37%); //#007bbd
+  --ht-color-brand-blue-3: hsl(198 100% 44%); //#009de0
+  --ht-color-brand-green-1:hsl( 86 53% 51%); //#8bc440
+  --ht-color-brand-teal-1: hsl(174 46% 49%); //#43b6ab
+
+  --ht-color-green: hsl(130, 61%, 64%); //--green-4 #69DB7C
+
+  --ht-color-red: hsl(0, 100%, 71%); //--red-5 #FF6B6B
+
+  --ht-color-accent: var(--ht-color-primary);
+
+  --ht-color-gray-1-light: hsl(210, 14%, 83%); // #ced4da
+  --ht-color-gray-2-light: hsl(210, 16%, 93%); // #e9ecef
+  --ht-color-gray-3-light: var(--gray-5);
+
+  --ht-color-gray-1-dark: hsl(210, 7%, 56%); // #868e96
+  --ht-color-gray-2-dark: hsl(204, 10%, 10%); // #171a1c
+
+  // MAIN COLORS
+  --ht-color-primary: var(--ht-color-brand-blue-3);
+  --ht-color-primary-lighter: hsl(198 100% 60%); // no other concise and handy way to define a brighter color...
+
+  --ht-color-secondary: var(--ht-color-brand-green-1);
+  --ht-color-secondary-lighter: hsl( 86 53% 65%);
+
+  --ht-color-tertiary: var(--ht-color-brand-teal-1);
+
+  // LIGHT THEME
+  --ht-text-color-1-light: hsl(213 67% 19%); //#102d51
+  --ht-text-color-2-light: hsl(219 100% 30%); //#003598
+
+  --ht-surface-1-light: white;
+  --ht-surface-2-light: hsl(210, 17%, 98%); // f8f9fa
+  --ht-surface-3-light: hsl(210, 16%, 93%); // #e9ecef
+  --ht-surface-4-light: hsl(218, 14%, 89%); // #dee1e6
+
+  --ht-surface-shadow-light: var(--gray-8-hsl);
+  --ht-shadow-strength-light: 2%;
+
+  // DARK THEME
+  --ht-text-color-1-dark: hsl(210 17% 95%); // --gray-1 #f1f3f5
+  --ht-text-color-2-dark: hsl(210 14% 83%); // --gray-4 #ced4da
+
+  --ht-surface-1-dark: hsl(210, 8%, 15%); // #222528
+  --ht-surface-2-dark: hsl(212, 11%, 23%); // #333940
+  --ht-surface-3-dark: hsl(210, 9%, 31%); // #495057
+  --ht-surface-4-dark: hsl(210, 7%, 56%); // #868e96
+
+  --ht-surface-shadow-dark: var(--gray-9-hsl);
+  --ht-shadow-strength-dark: 80%;
+
+  // SETUP STANDARD LIGHT MODE
+  color-scheme: light;
+  --ht-text-color-1: var(--ht-text-color-1-light);
+  --ht-text-color-2: var(--ht-text-color-2-light);
+  --ht-surface-1: var(--ht-surface-1-light);
+  --ht-surface-2: var(--ht-surface-2-light);
+  --ht-surface-3: var(--ht-surface-3-light);
+  --ht-surface-4: var(--ht-surface-4-light);
+  --ht-surface-shadow: var(--ht-surface-shadow-light);
+  --ht-shadow-strength: var(--ht-shadow-strength-light);
+  --ht-color-gray-1: var(--ht-color-gray-1-light);
+  --ht-color-gray-2: var(--ht-color-gray-2-light);
+  --ht-color-gray-3: var(--ht-color-gray-3-light);
+}
+
+
+/********************************************/
+/* GLOBAL                                   */
+/********************************************/
+html {
+  background-color: var(--ht-surface-1);
+  accent-color: var(--ht-color-accent);
+}
+
+svg.ht-chart {
+  background-color: var(--ht-surface-1-light);
+  color: var(--ht-text-color-1-light);
+}
+
+
+/********************************************/
+/* LIGHT MODE                               */
+/********************************************/
+.ht-lightmode {
+  color-scheme: light;
+  --ht-text-color-1: var(--ht-text-color-1-light);
+  --ht-text-color-2: var(--ht-text-color-2-light);
+  --ht-surface-1: var(--ht-surface-1-light);
+  --ht-surface-2: var(--ht-surface-2-light);
+  --ht-surface-3: var(--ht-surface-3-light);
+  --ht-surface-4: var(--ht-surface-4-light);
+  --ht-surface-shadow: var(--ht-surface-shadow-light);
+  --ht-shadow-strength: var(--ht-shadow-strength-light);
+  --ht-color-gray-1: var(--ht-color-gray-1-light);
+  --ht-color-gray-2: var(--ht-color-gray-2-light);
+  --ht-color-gray-3: var(--ht-color-gray-3-light);
+}
+
+
+/********************************************/
+/* DARK MODE                                */
+/********************************************/
+.ht-darkmode {
+  color-scheme: dark;
+  --ht-text-color-1: var(--ht-text-color-2-dark);
+  --ht-text-color-2: var(--ht-text-color-1-dark);
+  --ht-surface-1: var(--ht-surface-1-dark);
+  --ht-surface-2: var(--ht-surface-2-dark);
+  --ht-surface-3: var(--ht-surface-3-dark);
+  --ht-surface-4: var(--ht-surface-4-dark);
+  --ht-surface-shadow: var(--ht-surface-shadow-dark);
+  --ht-shadow-strength: var(--ht-shadow-strength-dark);
+  --ht-color-gray-1: var(--ht-color-gray-1-dark);
+  --ht-color-gray-2: var(--ht-color-gray-2-dark);
+  --ht-color-gray-3: var(--ht-color-gray-1-dark);
+}
+
+/********************************************/
+/* BRAND GRADIENT SKIN                      */
+/********************************************/
+.ht-skin-brand-gradient{
+  background-image: var(--ht-color-brand-gradient);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
