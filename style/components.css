@@ -332,13 +332,15 @@ progress {
   & > h2 {
     font-size: var(--font-size-4);
     font-weight: bold;
+    line-height: var(--font-lineheight-1);
+    margin-bottom: var(--size-2);
   }
 
   & > button {
     width: 17px;
 
     position: absolute;
-    right: 1em;
+    right: .5em;
     top: 1em;
 
     &:before,

@@ -94,5 +94,11 @@
     bottom: calc(var(--small-spacing) / 4);
     left: 0;
     font-size: var(--small-font-size);
+    color: var(--ht-color-red);
+    max-height: var(--small-spacing);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
   }
 }
