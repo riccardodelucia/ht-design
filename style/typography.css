@@ -26,7 +26,3 @@ p {
 body {
   line-height: var(--font-lineheight-4);
 }
-
-.ht-error-message {
-  color: var(--ht-color-red);
-}

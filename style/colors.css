@@ -1,3 +1,7 @@
+/* Note: all variables here declared are lead by the --ht-* prefix
+ * this is done intentionally, to indicate fundamental CSS custom properties that are not meant to be modified at runtime
+ */
+
 :root {
   --ht-color-brand-gradient: linear-gradient(
     to right,
