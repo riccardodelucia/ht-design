@@ -1,9 +1,15 @@
-body {
-  min-height: 100dvh;
+// variables with disabled inheritance
+* {
+  --border-color: initial;
 
-  &.ht-prevent-scroll {
-    height: 100vh;
-    height: 100dvh;
-    overflow: hidden;
-  }
+  --padding-block: initial;
+  --padding-inline: initial;
+
+  --flex-gap: initial;
+
+  --grid-gap: initial;
+  --grid-row-gap: initial;
+  --grid-column-gap: initial;
+  --grid-placement: initial;
+  --grid-min-item-size: initial;
 }

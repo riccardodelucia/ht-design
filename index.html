@@ -11,47 +11,38 @@
       padding-block: 5rem;
     }
 
-    .prose>h1 {
+    h1 {
       font-size: var(--font-size-8);
     }
 
-    .prose>h2 {
+    h2 {
       font-size: var(--font-size-5);
     }
 
-    .prose>h3 {
+    h3 {
       font-size: var(--font-size-4);
     }
 
-    .prose>h1,
-    .prose>h2 {
+    h1,
+    h2 {
       font-family: var(--font-mono);
     }
 
-    .prose>h1,
-    .prose>h2,
-    .prose>h3 {
+    h1,
+    h2,
+    h3 {
       text-transform: uppercase;
       color: var(--ht-text-color-2);
     }
 
-    .prose .ht-container {
-      --container-padding-block: .5em;
-      --container-padding-inline: 1em;
-    }
-
-    .prose .ht-grid-auto {
+    .ht-grid-auto {
       --grid-min-item-size: 10rem;
-    }
-
-    .form .ht-formgroup {
-      --formgroup-bottom-spacing: .2rem;
     }
   </style>
 </head>
 
 <body>
-  <main class="ht-layout-stack ht-wrapper prose" id="main">
+  <main class="ht-layout-stack ht-wrapper" id="main">
     <img src="/HT_logo.svg" alt="HT Logo" width="200px" />
     <h1 class="">
       Design System
@@ -60,15 +51,6 @@
     <div class="ht-layout-stack">
       <input id="color-scheme-toggle" role="switch" type="checkbox" />
       <label for="color-scheme-toggle">Toggle Color Scheme</label>
-    </div>
-    <h2>Shapes</h2>
-    <div class="ht-grid-auto">
-      <div class="ht-card ht-container">
-        Card
-      </div>
-      <div class="ht-circle ht-container">
-        Circle
-      </div>
     </div>
     <h2>Colors</h2>
     <h3>
@@ -179,9 +161,11 @@
       Typography
     </h2>
     <h3>Font Families</h3>
-    <p style="font-family: var(--font-mono)">Font mono</p>
-    <p style="font-family: var(--font-sans)">Font sans</p>
-    <p style="font-family: var(--font-serif)">Font serif</p>
+    <ul style="--list-margin: 4rem">
+      <li style="font-family: var(--font-mono)">Font mono</li>
+      <li style="font-family: var(--font-sans)">Font sans</li>
+      <li style="font-family: var(--font-serif)">Font serif</li>
+    </ul>
     <h3>Standard paragraph</h3>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est non
@@ -193,8 +177,13 @@
     <p>
       This is a <a href="#">link</a>
     </p>
+    <h3>Reset link</h3>
+    <p>
+      This is a <a href="#" class="ht-reset" style="--link-text-color: purple">Purple Reset Link</a>
+    </p>
     <h2>Buttons</h2>
-    <div class="ht-flex-align-center ht-flex-wrap">
+    <button type="button" class="ht-reset" style="--button-text-color: gold">Gold Reset Button</button>
+    <div class="ht-flex-align-center">
       <button type="button">Primary</button>
       <button type="button" data-type="secondary">
         Secondary
@@ -204,21 +193,21 @@
       </button>
     </div>
     <h3>Custom sizes</h3>
-    <div class="ht-flex-align-center ht-flex-wrap">
+    <div class="ht-flex-align-center">
       <button type="button" style="--padding-inline: 4em">
         padding-inline: 4em
       </button>
       <button type="button" style="--padding-block: 2em">
         padding-block: 2em
       </button>
-      <button type="button" style="--font-size: var(--font-size-6)">
+      <button type="button" style="--button-font-size: var(--font-size-6)">
         font-size 6
       </button>
     </div>
     <h2>
       Form Input Elements
     </h2>
-    <form class="form">
+    <form>
       <div class="ht-formgroup" >
         <label for="input-standard">Standard input</label>
         <input type="text" id="input-standard" placeholder="placeholder" />
@@ -226,7 +215,7 @@
       <div class="ht-formgroup">
         <label for="input-error">Invalid input</label>
         <input type="text" id="input-error" aria-invalid="true" placeholder="placeholder" />
-        <small class="ht-error-message">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim atque omnis corporis, et ut autem maxime amet placeat quasi possimus aspernatur dolore. Magni enim beatae cupiditate cum laboriosam nam expedita! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque possimus itaque doloremque voluptatibus accusamus laboriosam? Quas obcaecati rem doloribus vero quidem illum quisquam tempora, ea illo aliquid adipisci consequuntur tenetur.</small>
+        <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim atque omnis corporis, et ut autem maxime amet placeat quasi possimus aspernatur dolore. Magni enim beatae cupiditate cum laboriosam nam expedita! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque possimus itaque doloremque voluptatibus accusamus laboriosam? Quas obcaecati rem doloribus vero quidem illum quisquam tempora, ea illo aliquid adipisci consequuntur tenetur.</small>
       </div>
       <div class="ht-formgroup">
         <label for="input-textarea">Textarea</label>
@@ -245,24 +234,22 @@
             </option>
           </optgroup>
         </select>
-        <small class="ht-error-message">Error message</small>
       </div>
       <div class="ht-formgroup">
         <label for="input-file">File Input</label>
         <input id="input-file" type="file" />
-        <small class="ht-error-message">Error message</small>
       </div>
       <div class="ht-formgroup">
-        <p>Checkbox</p>
+        <p>Checkbox (custom color: limegreen)</p>
         <div>
-          <input id="input-checkbox" type="checkbox"/>
+          <input id="input-checkbox" type="checkbox" style="--checkbox-color: limegreen"/>
           <label for="input-checkbox">Click to un/check</label>
         </div>
-        <small class="ht-error-message">Error message</small>
+        <small>Error message</small>
       </div>
       <div class="ht-formgroup">
-        <p>Radio Group</p>
-        <div class="ht-radiogroup">
+        <p>Radio Group (custom color: magenta)</p>
+        <div class="ht-radiogroup" style="--radio-color: magenta">
           <div>
             <input id="radio-option-1" type="radio" value="option 1" name="radio-group" checked />
             <label for="radio-option-1">Option 1</label>
@@ -272,19 +259,19 @@
             <label for="radio-option-2">Option 2</label>
           </div>
         </div>
-        <small class="ht-error-message">Error message</small>
+        <small>Error message</small>
       </div>
       <div class="ht-formgroup">
-        <p>Switch</p>
+        <p>Switch (custom color: springgreen)</p>
         <div>
-          <input id="input-switch" role="switch" checked type="checkbox" />
+          <input id="input-switch" role="switch" checked type="checkbox" style="--switch-color: springgreen"/>
           <label for="input-switch">Click to toggle</label>
         </div>
-        <small class="ht-error-message">Error message</small>
+        <small>Error message</small>
       </div>
       <div class="ht-formgroup">
-        <label for="input-progress">Progress</label>
-        <progress id="input-progress" max="100" value="70" >70%</progress>
+        <label for="input-progress">Progress (custom color: rebeccapurple)</label>
+        <progress id="input-progress" max="100" value="70" style="--progress-color: rebeccapurple">70%</progress>
       </div>
     </form>
     <h2>
@@ -298,7 +285,7 @@
         <li class="ht-flex-align-center"><span
               class="ht-number-indicator">2</span><span>Standard</span></li>
         <li class="ht-flex-align-center"><span
-            class="ht-number-indicator" style="--size: 5rem">3</span><span>Standard, with custom size</span></li>
+            class="ht-number-indicator" style="--indicator-size: 5rem">3</span><span>Standard, with custom size</span></li>
         <li class="ht-flex-align-center"><span
             class="ht-number-indicator" aria-disabled="true">4</span><span>Disabled</span></li>
       </ol>
