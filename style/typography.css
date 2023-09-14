@@ -26,3 +26,8 @@ p {
 body {
   line-height: var(--font-lineheight-4);
 }
+
+.ht-chart-title {
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-5);
+}
