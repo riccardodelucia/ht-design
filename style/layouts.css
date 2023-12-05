@@ -74,31 +74,3 @@
   display: grid;
   place-items: center;
 }
-
-/************************************************************************/
-/* FORM GROUP                                                           */
-/************************************************************************/
-// Apply this class whenever you want to activate a form-like layout, with correctly vertically stacked input elements
-.ht-formgroup {
-  display: grid;
-  row-gap: var(--formgroup-gap, 0.2rem); //better stay with rem to correctly compute the error message allocated space
-
-  --_error-font-size: var(--font-size-0);
-  --_error-spacing: calc(2 * var(--_error-font-size));
-
-  padding-bottom: var(--_error-spacing);
-  position: relative;
-
-  small {
-    position: absolute;
-    bottom: calc(var(--_error-spacing) / 4);
-    left: 0;
-    font-size: var(--_error-font-size);
-    color: var(--ht-color-red);
-    max-height: var(--_error-spacing);
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    max-width: 100%;
-  }
-}
