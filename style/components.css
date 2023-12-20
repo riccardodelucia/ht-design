@@ -216,13 +216,8 @@ input[type="radio"] {
 
   height: var(--input-control-size);
   aspect-ratio: 1 / 1;
-
-  &,
-  & + label {
-    cursor: pointer;
-    vertical-align: middle;
-  }
 }
+
 
 input[type='checkbox'] {
   accent-color: var(--checkbox-color, var(--ht-color-accent));
