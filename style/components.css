@@ -155,6 +155,10 @@ a.ht-button {
 /* INPUTS                                                               */
 /************************************************************************/
 
+.ht-input-error-message {
+  font-size: var(--error-font-size, --font-size-0);
+  color: var(--ht-color-red);
+}
 ///////////////////////////////////////////////
 // TEXT INPUT
 input[type="text"],
@@ -212,13 +216,8 @@ input[type="radio"] {
 
   height: var(--input-control-size);
   aspect-ratio: 1 / 1;
-
-  &,
-  & + label {
-    cursor: pointer;
-    vertical-align: middle;
-  }
 }
+
 
 input[type='checkbox'] {
   accent-color: var(--checkbox-color, var(--ht-color-accent));
