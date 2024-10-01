@@ -6,11 +6,6 @@ stages:
 variables:
       PACKAGE_REGISTRY_PROJECT_ID: 194 # because before_script doesn't have access to CICD custom variables
 
-.config package registry:
-  before_script:    
-    - npm config set -- "//${CI_SERVER_HOST}/api/v4/projects/${CI_PROJECT_ID}/packages/npm/:_authToken=${CI_JOB_TOKEN}"
-    - npm config set "@nf-data-iu3:registry=https://${CI_SERVER_HOST}/api/v4/projects/${CI_PROJECT_ID}/packages/npm/"
-
 .only for tagged commit:
   rules:
     - if: "$CI_COMMIT_TAG"
@@ -47,8 +42,8 @@ publish npm package:
   image: node:latest
   stage: publish
   before_script:
-    - npm config set -- "//${CI_SERVER_HOST}/api/v4/projects/${CI_PROJECT_ID}/packages/npm/:_authToken=${CI_JOB_TOKEN}"
-    - npm config set "@nf-data-iu3:registry=https://${CI_SERVER_HOST}/api/v4/projects/${CI_PROJECT_ID}/packages/npm/"
+    - npm config set -- //${CI_SERVER_HOST}/api/v4/projects/${PACKAGE_REGISTRY_PROJECT_ID}/packages/npm/:_authToken=${CI_JOB_TOKEN}
+    - npm config set @${CI_PROJECT_NAMESPACE}:registry=https://${CI_SERVER_HOST}/api/v4/projects/${PACKAGE_REGISTRY_PROJECT_ID}/packages/npm/
   script:
     - npm publish
   #rules:
