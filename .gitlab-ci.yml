@@ -8,8 +8,8 @@ variables:
 
 .config package registry:
   before_script:    
-    - npm config set -- //${CI_SERVER_HOST}/api/v4/projects/${PACKAGE_REGISTRY_PROJECT_ID}/packages/npm/:_authToken=${CI_JOB_TOKEN}
-    - npm config set @${CI_PROJECT_NAMESPACE}:registry=https://${CI_SERVER_HOST}/api/v4/projects/${PACKAGE_REGISTRY_PROJECT_ID}/packages/npm/
+    - npm config set -- "//${CI_SERVER_HOST}/api/v4/projects/${CI_PROJECT_ID}/packages/npm/:_authToken=${CI_JOB_TOKEN}"
+    - npm config set "@nf-data-iu3:registry=https://${CI_SERVER_HOST}/api/v4/projects/${CI_PROJECT_ID}/packages/npm/"
 
 .only for tagged commit:
   rules:
@@ -17,7 +17,7 @@ variables:
       when: on_success
     - when: never
 
-version package:
+.version package:
   image: node:latest
   stage: version
   before_script:
@@ -34,9 +34,9 @@ version package:
 build npm dist:
   image: node:latest  
   stage: build
-  extends: .config package registry
+  #extends: .config package registry
   script:
-    - npm install
+    - npm ci
     - npm run build
   artifacts:
     paths:
@@ -46,8 +46,10 @@ build npm dist:
 publish npm package:
   image: node:latest
   stage: publish
-  extends: .config package registry
+  before_script:
+    - npm config set -- "//${CI_SERVER_HOST}/api/v4/projects/${CI_PROJECT_ID}/packages/npm/:_authToken=${CI_JOB_TOKEN}"
+    - npm config set "@nf-data-iu3:registry=https://${CI_SERVER_HOST}/api/v4/projects/${CI_PROJECT_ID}/packages/npm/"
   script:
     - npm publish
-  rules:
-    - !reference [.only for tagged commit, rules]
+  #rules:
+    #- !reference [.only for tagged commit, rules]
