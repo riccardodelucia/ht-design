@@ -46,5 +46,5 @@ publish npm package:
     - npm config set @${CI_PROJECT_NAMESPACE}:registry=https://${CI_SERVER_HOST}/api/v4/projects/${PACKAGE_REGISTRY_PROJECT_ID}/packages/npm/
   script:
     - npm publish
-  #rules:
-    #- !reference [.only for tagged commit, rules]
+  rules:
+    - !reference [.only for tagged commit, rules]
