@@ -8,7 +8,7 @@ variables:
 
 .config package registry:
   before_script:
-    - echo "//gitlab.fht.org/api/v4/packages/npm/:_authToken=${CI_JOB_TOKEN}" > ~/.npmrc
+    # - echo "//gitlab.fht.org/api/v4/packages/npm/:_authToken=${CI_JOB_TOKEN}" > ~/.npmrc
     - cat ~/.npmrc
     - npm whoami || echo "Not authenticated"  
     - npm config set -- //${CI_SERVER_HOST}/api/v4/projects/${PACKAGE_REGISTRY_PROJECT_ID}/packages/npm/:_authToken=${CI_JOB_TOKEN}
