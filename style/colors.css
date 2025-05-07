@@ -22,6 +22,8 @@
 
   --ht-color-red: hsl(0, 100%, 71%); //--red-5 #FF6B6B
 
+  --ht-color-yellow: hsl(42, 96.10%, 50.00%); //--yellow-6 #FAB105
+
   --ht-color-accent: var(--ht-color-primary);
 
   --ht-color-gray-1-light: hsl(210, 14%, 83%); // #ced4da
