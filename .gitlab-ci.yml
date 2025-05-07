@@ -46,7 +46,7 @@ build npm dist:
 publish npm package:
   image: node:latest
   stage: publish
-  #extends: .config package registry
+  extends: .config package registry
   script:
     - npm publish
   rules:
