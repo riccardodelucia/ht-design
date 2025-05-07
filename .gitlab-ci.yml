@@ -49,5 +49,5 @@ publish npm package:
   extends: .config package registry
   script:
     - npm publish
-  rules:
-    - !reference [.only for tagged commit, rules]
+  #rules:
+    #- !reference [.only for tagged commit, rules]
