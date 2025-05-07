@@ -346,6 +346,10 @@ progress {
   &[data-type="error"] {
     background-color: var(--ht-color-red);
   }
+
+  &[data-type="warning"] {
+    background-color: var(--ht-color-yellow);
+  }
 }
 
 /************************************************************************/
