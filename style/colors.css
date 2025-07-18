@@ -54,6 +54,15 @@
   --ht-surface-shadow-light: var(--gray-8-hsl);
   --ht-shadow-strength-light: 2%;
 
+  --ht-chart-orange-light: hsl(41, 100%, 45%);
+  --ht-chart-skyblue-light: hsl(202, 77%, 63%);
+  --ht-chart-bluishgreen-light: hsl(164, 100%, 31%);
+  --ht-chart-yellow-light: hsl(56, 87%, 60%);
+  --ht-chart-blue-light: hsl(202, 100%, 35%);
+  --ht-chart-vermilion-light: hsl(27, 100%, 42%);
+  --ht-chart-reddishpurple-light: hsl(326, 51%, 64%);
+  --ht-chart-neutral-light: black;
+
   // DARK THEME
   --ht-text-color-1-dark: hsl(210 17% 95%); // --gray-1 #f1f3f5
   --ht-text-color-2-dark: hsl(210 14% 83%); // --gray-4 #ced4da
@@ -65,6 +74,15 @@
 
   --ht-surface-shadow-dark: var(--gray-9-hsl);
   --ht-shadow-strength-dark: 80%;
+
+  --ht-chart-orange-dark: hsl(41, 100%, 60%);
+  --ht-chart-skyblue-dark: hsl(202, 77%, 75%);
+  --ht-chart-bluishgreen-dark: hsl(164, 100%, 45%);
+  --ht-chart-yellow-dark: hsl(56, 87%, 70%);
+  --ht-chart-blue-dark: hsl(202, 100%, 60%);
+  --ht-chart-vermilion-dark: hsl(27, 100%, 60%);
+  --ht-chart-reddishpurple-dark: hsl(326, 51%, 75%);
+  --ht-chart-neutral-dark: white;
 
   // SETUP STANDARD LIGHT MODE
   color-scheme: light;
@@ -79,6 +97,7 @@
   --ht-color-gray-1: var(--ht-color-gray-1-light);
   --ht-color-gray-2: var(--ht-color-gray-2-light);
   --ht-color-gray-3: var(--ht-color-gray-3-light);
+
 }
 
 
@@ -112,6 +131,14 @@ svg.ht-chart {
   --ht-color-gray-1: var(--ht-color-gray-1-light);
   --ht-color-gray-2: var(--ht-color-gray-2-light);
   --ht-color-gray-3: var(--ht-color-gray-3-light);
+  --ht-chart-orange: var(--ht-chart-orange-light);
+  --ht-chart-skyblue: var(--ht-chart-skyblue-light);
+  --ht-chart-bluishgreen: var(--ht-chart-bluishgreen-light);   
+  --ht-chart-yellow: var(--ht-chart-yellow-light);
+  --ht-chart-blue: var(--ht-chart-blue-light);
+  --ht-chart-vermilion: var(--ht-chart-vermilion-light);
+  --ht-chart-reddishpurple: var(--ht-chart-reddishpurple-light);
+  --ht-chart-neutral: var(--ht-chart-neutral-light);
 }
 
 
@@ -131,6 +158,14 @@ svg.ht-chart {
   --ht-color-gray-1: var(--ht-color-gray-1-dark);
   --ht-color-gray-2: var(--ht-color-gray-2-dark);
   --ht-color-gray-3: var(--ht-color-gray-1-dark);
+  --ht-chart-orange: var(--ht-chart-orange-dark);
+  --ht-chart-skyblue: var(--ht-chart-skyblue-dark);
+  --ht-chart-bluishgreen: var(--ht-chart-bluishgreen-dark);
+  --ht-chart-yellow: var(--ht-chart-yellow-dark);
+  --ht-chart-blue: var(--ht-chart-blue-dark);
+  --ht-chart-vermilion: var(--ht-chart-vermilion-dark);
+  --ht-chart-reddishpurple: var(--ht-chart-reddishpurple-dark);
+  --ht-chart-neutral: var(--ht-chart-neutral-dark);
 }
 
 /********************************************/
