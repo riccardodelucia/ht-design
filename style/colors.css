@@ -67,9 +67,9 @@
   --ht-chart-neutral-1-light: black;
 
   /* 3 color palette for charts */
-  --ht-chart-blue-2-light: hsl(202, 100%, 35%); /* #0072B2 */
-  --ht-chart-red-1-light: hsl(4, 73%, 50%); /* #DC3220 */
-  --ht-chart-grey-1-light: var(--ht-color-gray-1-light); /* #CED4DA */
+  --ht-chart-main-blue-light: var(--ht-chart-blue-2-light); /* #0072B2 */
+  --ht-chart-main-red-light: hsl(4, 73%, 50%); /* #DC3220 */
+  --ht-chart-main-grey-light: var(--ht-color-gray-1-light); /* #CED4DA */
 
   /* DARK THEME */
   --ht-text-color-1-dark: hsl(210 17% 95%); /* --gray-1 #f1f3f5 */
@@ -94,9 +94,9 @@
   --ht-chart-neutral-1-dark: white;
 
   /* 3 color palette for charts */
-  --ht-chart-blue-2-dark: hsl(215, 100%, 35%); /* #005AB5 */
-  --ht-chart-red-1-dark: hsl(4, 73%, 60%); /* #E0483D */
-  --ht-chart-grey-1-dark: var(--ht-color-gray-1-dark); /* #868E96 */
+  --ht-chart-main-blue-dark: var(--ht-chart-blue-2-dark); /* #005AB5 */
+  --ht-chart-main-red-dark: hsl(4, 73%, 60%); /* #E0483D */
+  --ht-chart-main-grey-dark: var(--ht-color-gray-1-dark); /* #868E96 */
 
   /* SETUP STANDARD LIGHT MODE */
   color-scheme: light;
