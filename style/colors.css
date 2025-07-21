@@ -54,13 +54,13 @@
   --ht-surface-shadow-light: var(--gray-8-hsl);
   --ht-shadow-strength-light: 2%;
 
-  --ht-chart-orange-1-light: hsl(41, 100%, 45%);
-  --ht-chart-orange-2-light: hsl(27, 100%, 42%);
-  --ht-chart-blue-1-light: hsl(202, 77%, 63%);
-  --ht-chart-blue-2-light: hsl(202, 100%, 35%);
+  --ht-chart-orange-1-light: hsl(39, 100%, 45%);
+  --ht-chart-blue-1-light: hsl(204, 78%, 63%);
   --ht-chart-green-1-light: hsl(164, 100%, 31%);
   --ht-chart-yellow-1-light: hsl(56, 87%, 60%);
-  --ht-chart-purple-1-light: hsl(326, 51%, 64%);
+  --ht-chart-orange-2-light: hsl(27, 100%, 42%);
+  --ht-chart-blue-2-light: hsl(203, 100%, 35%);
+  --ht-chart-purple-1-light: hsl(326, 49%, 63%);
   --ht-chart-neutral-1-light: black;
 
   // DARK THEME
@@ -75,13 +75,13 @@
   --ht-surface-shadow-dark: var(--gray-9-hsl);
   --ht-shadow-strength-dark: 80%;
 
-  --ht-chart-orange-1-dark: hsl(41, 100%, 60%);
-  --ht-chart-orange-2-dark: hsl(27, 100%, 60%);
-  --ht-chart-blue-1-dark: hsl(202, 77%, 75%);
-  --ht-chart-blue-2-dark: hsl(202, 100%, 60%);
-  --ht-chart-green-1-dark: hsl(164, 100%, 45%);
-  --ht-chart-yellow-1-dark: hsl(56, 87%, 70%);
-  --ht-chart-purple-1-dark: hsl(326, 51%, 75%);
+  --ht-chart-orange-1-dark: hsl(42, 100%, 50%);
+  --ht-chart-blue-1-dark: hsl(202, 100%, 70%);
+  --ht-chart-green-1-dark: hsl(165, 100%, 35%);
+  --ht-chart-yellow-1-dark: hsl(52, 100%, 50%);
+  --ht-chart-blue-2-dark: hsl(210, 100%, 60%);
+  --ht-chart-orange-2-dark: hsl(20, 100%, 55%);
+  --ht-chart-purple-1-dark: hsl(320,60%, 65%);
   --ht-chart-neutral-1-dark: white;
 
   // SETUP STANDARD LIGHT MODE
@@ -97,7 +97,6 @@
   --ht-color-gray-1: var(--ht-color-gray-1-light);
   --ht-color-gray-2: var(--ht-color-gray-2-light);
   --ht-color-gray-3: var(--ht-color-gray-3-light);
-
 }
 
 
@@ -132,11 +131,11 @@ svg.ht-chart {
   --ht-color-gray-2: var(--ht-color-gray-2-light);
   --ht-color-gray-3: var(--ht-color-gray-3-light);
   --ht-chart-orange-1: var(--ht-chart-orange-1-light);
-  --ht-chart-orange-2: var(--ht-chart-orange-2-light);
   --ht-chart-blue-1: var(--ht-chart-blue-1-light);
-  --ht-chart-blue-2: var(--ht-chart-blue-2-light);
   --ht-chart-green-1: var(--ht-chart-green-1-light);
   --ht-chart-yellow-1: var(--ht-chart-yellow-1-light);
+  --ht-chart-blue-2: var(--ht-chart-blue-2-light);
+  --ht-chart-orange-2: var(--ht-chart-orange-2-light);
   --ht-chart-purple-1: var(--ht-chart-purple-1-light);
   --ht-chart-neutral-1: var(--ht-chart-neutral-1-light);
 }
@@ -159,11 +158,11 @@ svg.ht-chart {
   --ht-color-gray-2: var(--ht-color-gray-2-dark);
   --ht-color-gray-3: var(--ht-color-gray-1-dark);
   --ht-chart-orange-1: var(--ht-chart-orange-1-dark);
-  --ht-chart-orange-2: var(--ht-chart-orange-2-dark);
   --ht-chart-blue-1: var(--ht-chart-blue-1-dark);
-  --ht-chart-blue-2: var(--ht-chart-blue-2-dark);
   --ht-chart-green-1: var(--ht-chart-green-1-dark);
   --ht-chart-yellow-1: var(--ht-chart-yellow-1-dark);
+  --ht-chart-blue-2: var(--ht-chart-blue-2-dark);
+  --ht-chart-orange-2: var(--ht-chart-orange-2-dark);
   --ht-chart-purple-1: var(--ht-chart-purple-1-dark);
   --ht-chart-neutral: var(--ht-chart-neutral-dark);
 }
