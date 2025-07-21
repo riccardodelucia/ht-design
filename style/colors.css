@@ -61,7 +61,7 @@
   --ht-chart-orange-2-light: hsl(26, 100%, 42%); // #D55E00
   --ht-chart-blue-2-light: hsl(202, 100%, 35%);  // #0072B2	
   --ht-chart-purple-1-light: hsl(327, 45%, 64%); // #CC79A7
-  --ht-chart-neutral-1-light: black; // #000000
+  --ht-chart-neutral-1-light: black; 
 
   // DARK THEME
   --ht-text-color-1-dark: hsl(210 17% 95%); // --gray-1 #f1f3f5
