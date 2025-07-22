@@ -12,7 +12,7 @@ svg.ht-chart text {
   color: var(--text-color-1-light);
 }
 
-// NOTE: heading tags should have a semantic meaning. There is no point in styling them without knowing the context
+/* NOTE: heading tags should have a semantic meaning. There is no point in styling them without knowing the context */
 h1,
 h2,
 h3,

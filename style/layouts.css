@@ -59,7 +59,7 @@
   );
 }
 
-// These classes are meant to center one single child block, DO NOT USE THEM AS STANDARD GRID LAYOUTS
+/* These classes are meant to center one single child block, DO NOT USE THEM AS STANDARD GRID LAYOUTS */
 .ht-grid-center-x {
   display: grid;
   justify-items: center;
