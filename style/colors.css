@@ -2,7 +2,22 @@
  * this is done intentionally, to indicate fundamental CSS custom properties that are not meant to be modified at runtime
  */
 
+/* 
+  All variables use the --ht-* prefix.
+  These are fundamental CSS custom properties, not meant to be changed at runtime.
+*/
+
+/************************************************************/
+/* LEGEND
+   - --ht-color-*        : Brand and reference colors
+   - --ht-surface-*      : UI surfaces
+   - --ht-text-color-*   : Text colors
+   - --ht-chart-*        : Chart palettes (8 and 3 colors)
+   - --*-light / --*-dark: Light and dark theme variants
+************************************************************/
+
 :root {
+  /* #region BRAND & REFERENCE COLORS */
   --ht-color-brand-gradient: linear-gradient(
     to right,
     rgba(0, 142, 211, 1) 0%,
@@ -11,7 +26,6 @@
     rgba(139, 197, 63, 1) 100%
   );
 
-  /* REFERENCE COLORS */
   --ht-color-brand-blue-1: hsl(213 68% 37%); /*  #1e589f */
   --ht-color-brand-blue-2: hsl(201 100% 37%); /* #007bbd */
   --ht-color-brand-blue-3: hsl(198 100% 44%); /* #009de0 */
@@ -19,32 +33,28 @@
   --ht-color-brand-teal-1: hsl(174 46% 49%); /* #43b6ab */
 
   --ht-color-green: hsl(130, 61%, 64%); /* --green-4 #69DB7C */
-
   --ht-color-red: hsl(0, 100%, 71%); /* --red-5 #FF6B6B */
-
   --ht-color-yellow: hsl(42, 96.1%, 50%); /* --yellow-6 #FAB105 */
-
   --ht-color-accent: var(--ht-color-primary);
 
   --ht-color-gray-1-light: hsl(210, 14%, 83%); /* #ced4da */
   --ht-color-gray-2-light: hsl(210, 16%, 93%); /* #e9ecef */
   --ht-color-gray-3-light: var(--gray-5);
-
   --ht-color-gray-1-dark: hsl(210, 7%, 56%); /* #868e96 */
   --ht-color-gray-2-dark: hsl(204, 10%, 10%); /* #171a1c */
+  /* #endregion BRAND & REFERENCE COLORS */
 
-  /* MAIN COLORS */
+  /* #region MAIN COLORS */
   --ht-color-primary: var(--ht-color-brand-blue-3);
   --ht-color-primary-lighter: hsl(
     198 100% 60%
   ); /* no other concise and handy way to define a brighter color... */
-
   --ht-color-secondary: var(--ht-color-brand-green-1);
   --ht-color-secondary-lighter: hsl(86 53% 65%);
-
   --ht-color-tertiary: var(--ht-color-brand-teal-1);
+  /* #endregion MAIN COLORS */
 
-  /* LIGHT THEME */
+  /* #region LIGHT THEME */
   --ht-text-color-1-light: hsl(213 67% 19%); /* #102d51 */
   --ht-text-color-2-light: hsl(219 100% 30%); /* #003598 */
 
@@ -56,7 +66,7 @@
   --ht-surface-shadow-light: var(--gray-8-hsl);
   --ht-shadow-strength-light: 2%;
 
-  /* 8 color palette for charts */
+  /* === 8 COLOR CHART PALETTE === */
   --ht-chart-orange-1-light: hsl(41, 100%, 45%); /* #E69F00 */
   --ht-chart-blue-1-light: hsl(202, 77%, 63%); /* #56B4E9 */
   --ht-chart-green-1-light: hsl(164, 100%, 31%); /* #009E73 */
@@ -66,12 +76,13 @@
   --ht-chart-purple-1-light: hsl(327, 45%, 64%); /* #CC79A7 */
   --ht-chart-neutral-1-light: black;
 
-  /* 3 color palette for charts */
-  --ht-chart-main-blue-light: var(--ht-chart-blue-2-light); /* #0072B2 */
-  --ht-chart-main-red-light: hsl(4, 73%, 50%); /* #DC3220 */
+  /* === 3 COLOR CHART PALETTE  === */
+  --ht-chart-main-blue-light: var(--ht-chart-blue-1-light); /* #56B4E9 */
+  --ht-chart-main-red-light: hsl(6, 75%, 49%); /* #DC3220 */
   --ht-chart-main-grey-light: var(--ht-color-gray-1-light); /* #CED4DA */
+  /* #endregion LIGHT THEME */
 
-  /* DARK THEME */
+  /* #region DARK THEME */
   --ht-text-color-1-dark: hsl(210 17% 95%); /* --gray-1 #f1f3f5 */
   --ht-text-color-2-dark: hsl(210 14% 83%); /* --gray-4 #ced4da */
 
@@ -83,22 +94,23 @@
   --ht-surface-shadow-dark: var(--gray-9-hsl);
   --ht-shadow-strength-dark: 80%;
 
-  /* 8 color palette for charts */
-  --ht-chart-orange-1-dark: hsl(42, 100%, 50%); /* #FEB338 */
-  --ht-chart-blue-1-dark: hsl(202, 100%, 70%); /* #6EC1F4 */
-  --ht-chart-green-1-dark: hsl(165, 100%, 35%); /* #50B089 */
-  --ht-chart-yellow-1-dark: hsl(52, 100%, 50%); /* #F9DE4B */
-  --ht-chart-blue-2-dark: hsl(215, 100%, 35%); /* #005AB5 */
-  --ht-chart-orange-2-dark: hsl(20, 100%, 55%); /* #ED7035 */
-  --ht-chart-purple-1-dark: hsl(320, 60%, 65%); /* #CD76B5 */
+  /* === 8 COLOR CHART PALETTE === */
+  --ht-chart-orange-1-dark: hsl(37, 99%, 61%); /* #FEB338 */
+  --ht-chart-blue-1-dark: hsl(203, 86%, 69%); /* #6EC1F4 */
+  --ht-chart-green-1-dark: hsl(156, 38%, 50%); /* #50B089 */
+  --ht-chart-yellow-1-dark: hsl(51, 94%, 64%); /* #F9DE4B */
+  --ht-chart-blue-2-dark: hsl(210, 100%, 35%); /* #005AB5 */
+  --ht-chart-orange-2-dark: hsl(19, 84%, 57%); /* #ED7035 */
+  --ht-chart-purple-1-dark: hsl(317, 47%, 63%); /* #CD76B5 */
   --ht-chart-neutral-1-dark: white;
 
-  /* 3 color palette for charts */
-  --ht-chart-main-blue-dark: var(--ht-chart-blue-2-dark); /* #005AB5 */
-  --ht-chart-main-red-dark: hsl(4, 73%, 60%); /* #E0483D */
+  /* === 3 COLOR CHART PALETTE  === */
+  --ht-chart-main-blue-dark: var(--ht-chart-blue-1-dark); /* #6EC1F4 */
+  --ht-chart-main-red-dark: hsl(4, 72%, 56%); /* #E0483D */
   --ht-chart-main-grey-dark: var(--ht-color-gray-1-dark); /* #868E96 */
+  /* #endregion DARK THEME */
 
-  /* SETUP STANDARD LIGHT MODE */
+  /* #region STANDARD LIGHT MODE SETUP*/
   color-scheme: light;
   --ht-text-color-1: var(--ht-text-color-1-light);
   --ht-text-color-2: var(--ht-text-color-2-light);
@@ -111,6 +123,7 @@
   --ht-color-gray-1: var(--ht-color-gray-1-light);
   --ht-color-gray-2: var(--ht-color-gray-2-light);
   --ht-color-gray-3: var(--ht-color-gray-3-light);
+  /* #endregion MODE SETUP */
 }
 
 /********************************************/
@@ -157,8 +170,8 @@ svg.ht-chart {
 /********************************************/
 .ht-darkmode {
   color-scheme: dark;
-  --ht-text-color-1: var(--ht-text-color-2-dark);
-  --ht-text-color-2: var(--ht-text-color-1-dark);
+  --ht-text-color-1: var(--ht-text-color-1-dark);
+  --ht-text-color-2: var(--ht-text-color-2-dark);
   --ht-surface-1: var(--ht-surface-1-dark);
   --ht-surface-2: var(--ht-surface-2-dark);
   --ht-surface-3: var(--ht-surface-3-dark);
