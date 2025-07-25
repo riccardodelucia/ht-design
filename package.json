@@ -9,7 +9,7 @@
   ],
   "exports": {
     "./style.css": "./dist/style.css",
-    "./colorCssVars.js": "./dist/colorCssVars.js"
+    "./runtime": "./src/cssVarsRuntime.js"
   },
   "scripts": {
     "dev": "vite",
