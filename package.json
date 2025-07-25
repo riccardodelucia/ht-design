@@ -4,10 +4,12 @@
   "version": "0.0.2",
   "type": "module",
   "files": [
-    "dist/style.css"
+    "dist/style.css",
+    "dist/colorCssVars.js"
   ],
   "exports": {
-    "./style.css": "./dist/style.css"
+    "./style.css": "./dist/style.css",
+    "./colorCssVars.js": "./dist/colorCssVars.js"
   },
   "scripts": {
     "dev": "vite",

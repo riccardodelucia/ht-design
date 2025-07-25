@@ -77,9 +77,9 @@
   --ht-chart-contrast-light: black;
 
   /* === 3 COLOR CHART PALETTE  === */
-  --ht-chart-main-blue-light: hsl(202, 77%, 63%); /* #56B4E9 */
-  --ht-chart-main-red-light: hsl(6, 75%, 49%); /* #DC3220 */
-  --ht-chart-main-grey-light: hsl(210, 7%, 56%); /* #868e96 */
+  --ht-chart-simple-blue-light: hsl(202, 77%, 63%); /* #56B4E9 */
+  --ht-chart-simple-red-light: hsl(6, 75%, 49%); /* #DC3220 */
+  --ht-chart-simple-grey-light: hsl(210, 7%, 56%); /* #868e96 */
   /* #endregion LIGHT THEME */
 
   /* #region DARK THEME */
@@ -105,9 +105,9 @@
   --ht-chart-contrast-dark: white;
 
   /* === 3 COLOR CHART PALETTE  === */
-  --ht-chart-main-blue-dark: hsl(203, 86%, 69%); /* #6EC1F4 */
-  --ht-chart-main-red-dark: hsl(4, 72%, 56%); /* #E0483D */
-  --ht-chart-main-grey-dark: hsl(210, 14%, 83%); /* #ced4da */
+  --ht-chart-simple-blue-dark: hsl(203, 86%, 69%); /* #6EC1F4 */
+  --ht-chart-simple-red-dark: hsl(4, 72%, 56%); /* #E0483D */
+  --ht-chart-simple-grey-dark: hsl(210, 14%, 83%); /* #ced4da */
   /* #endregion DARK THEME */
 
   /* #region STANDARD LIGHT MODE SETUP*/
@@ -163,9 +163,9 @@ svg.ht-chart {
   --ht-chart-orange-2: var(--ht-chart-orange-2-light);
   --ht-chart-purple-1: var(--ht-chart-purple-1-light);
   --ht-chart-contrast: var(--ht-chart-constrast-light);
-  --ht-chart-main-blue: var(--ht-chart-main-blue-light);
-  --ht-chart-main-red: var(--ht-chart-main-red-light);
-  --ht-chart-main-grey: var(--ht-chart-main-grey-light);
+  --ht-chart-simple-blue: var(--ht-chart-simple-blue-light);
+  --ht-chart-simple-red: var(--ht-chart-simple-red-light);
+  --ht-chart-simple-grey: var(--ht-chart-simple-grey-light);
 }
 
 /********************************************/
@@ -192,9 +192,9 @@ svg.ht-chart {
   --ht-chart-orange-2: var(--ht-chart-orange-2-dark);
   --ht-chart-purple-1: var(--ht-chart-purple-1-dark);
   --ht-chart-contrast: var(--ht-chart-contrast-dark);
-  --ht-chart-main-blue: var(--ht-chart-main-blue-dark);
-  --ht-chart-main-red: var(--ht-chart-main-red-dark);
-  --ht-chart-main-grey: var(--ht-chart-main-grey-dark);
+  --ht-chart-simple-blue: var(--ht-chart-simple-blue-dark);
+  --ht-chart-simple-red: var(--ht-chart-simple-red-dark);
+  --ht-chart-simple-grey: var(--ht-chart-simple-grey-dark);
 }
 
 /********************************************/

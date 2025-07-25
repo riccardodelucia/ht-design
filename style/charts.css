@@ -1,0 +1,17 @@
+.ht-chart {
+  font-family: var(--ht-font-sans);
+  font-size: var(--ht-font-size-2);
+  font-weight: var(--ht-font-weight-4);
+  line-height: var(--ht-line-height-4);
+  color: var(--ht-text-color-1);
+  background: var(--ht-surface-1);
+}
+
+.ht-chart-title {
+  font-size: var(--ht-font-size-2);
+  font-weight: var(--ht-font-weight-5);
+}
+
+svg.ht-chart text {
+  color: var(--ht-text-color-1-light); /* shouldn't it be fill? */
+}
