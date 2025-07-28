@@ -2,7 +2,7 @@
  * this is done intentionally, to indicate fundamental CSS custom properties that are not meant to be modified at runtime
  */
 
-/* 
+/*
   All variables use the --ht-* prefix.
   These are fundamental CSS custom properties, not meant to be changed at runtime.
 */
@@ -77,7 +77,7 @@
   --ht-chart-contrast-light: black;
 
   /* === 3 COLOR CHART PALETTE  === */
-  --ht-chart-simple-blue-light: hsl(202, 77%, 63%); /* #56B4E9 */
+  --ht-chart-simple-blue-light: hsl(210, 100%, 35%); /* #005AB5 */
   --ht-chart-simple-red-light: hsl(6, 75%, 49%); /* #DC3220 */
   --ht-chart-simple-grey-light: hsl(210, 7%, 56%); /* #868e96 */
   /* #endregion LIGHT THEME */
@@ -123,6 +123,17 @@
   --ht-color-gray-1: var(--ht-color-gray-1-light);
   --ht-color-gray-2: var(--ht-color-gray-2-light);
   --ht-color-gray-3: var(--ht-color-gray-3-light);
+  --ht-chart-orange-1: var(--ht-chart-orange-1-light);
+  --ht-chart-blue-1: var(--ht-chart-blue-1-light);
+  --ht-chart-green-1: var(--ht-chart-green-1-light);
+  --ht-chart-yellow-1: var(--ht-chart-yellow-1-light);
+  --ht-chart-blue-2: var(--ht-chart-blue-2-light);
+  --ht-chart-orange-2: var(--ht-chart-orange-2-light);
+  --ht-chart-purple-1: var(--ht-chart-purple-1-light);
+  --ht-chart-contrast: var(--ht-chart-constrast-light);
+  --ht-chart-simple-blue: var(--ht-chart-simple-blue-light);
+  --ht-chart-simple-red: var(--ht-chart-simple-red-light);
+  --ht-chart-simple-grey: var(--ht-chart-simple-grey-light);
   /* #endregion MODE SETUP */
 }
 
@@ -132,11 +143,6 @@
 html {
   background-color: var(--ht-surface-1);
   accent-color: var(--ht-color-accent);
-}
-
-svg.ht-chart {
-  background-color: var(--ht-surface-1-light);
-  color: var(--ht-text-color-1-light);
 }
 
 /********************************************/

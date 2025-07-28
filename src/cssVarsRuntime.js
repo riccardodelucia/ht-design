@@ -9,111 +9,51 @@ function getCSSVariable(name) {
     .trim();
 }
 
-// Extract all HT Design variables
-function extractHTVariables() {
-  const chartPaletteLight = {};
-  const chartPaletteDark = {};
-  const chartSimplePaletteLight = {};
-  const chartSimplePaletteDark = {};
-  const themeLight = {};
-  const themeDark = {};
-  const typography = {};
-
-  // Get all CSS variables from the document
-  const allStyles = getComputedStyle(document.documentElement);
-
-  // Convert CSSStyleDeclaration to array of property names
-  const cssVars = Array.from(allStyles).filter((prop) =>
-    prop.startsWith("--ht-")
-  );
-
-  cssVars.forEach((varName) => {
-    const value = getCSSVariable(varName);
-    const cleanName = varName.replace("--", "");
-
-    // Chart palettes
-    if (
-      varName.includes("ht-chart-") &&
-      !varName.includes("simple") &&
-      varName.endsWith("-light")
-    ) {
-      const key = cleanName.replace("ht-chart-", "").replace("-light", "");
-      chartPaletteLight[key] = value;
-    }
-    if (
-      varName.includes("ht-chart-") &&
-      !varName.includes("simple") &&
-      varName.endsWith("-dark")
-    ) {
-      const key = cleanName.replace("ht-chart-", "").replace("-dark", "");
-      chartPaletteDark[key] = value;
-    }
-
-    // Simple chart palettes
-    if (varName.includes("ht-chart-simple-") && varName.endsWith("-light")) {
-      const key = cleanName
-        .replace("ht-chart-simple-", "")
-        .replace("-light", "");
-      chartSimplePaletteLight[key] = value;
-    }
-    if (varName.includes("ht-chart-simple-") && varName.endsWith("-dark")) {
-      const key = cleanName
-        .replace("ht-chart-simple-", "")
-        .replace("-dark", "");
-      chartSimplePaletteDark[key] = value;
-    }
-
-    // Typography variables
-    if (varName.includes("ht-font-") || varName.includes("ht-line-height-")) {
-      typography[cleanName] = value;
-    }
-
-    // Theme variables
-    if (varName.endsWith("-light")) {
-      themeLight[cleanName] = value;
-    }
-    if (varName.endsWith("-dark")) {
-      themeDark[cleanName] = value;
-    }
-  });
-
-  return {
-    chartPaletteLight,
-    chartPaletteDark,
-    chartSimplePaletteLight,
-    chartSimplePaletteDark,
-    themeLight,
-    themeDark,
-    typography,
-  };
-}
-
-// Export function to get current theme variables
-export function getHTThemeVariables() {
-  return extractHTVariables();
-}
-
 // Export function to get specific variable
 export function getHTVariable(name) {
   return getCSSVariable(`--${name}`);
 }
 
-// Export function to get chart colors for current theme
+// Export function to get chart colors for current theme (reads active theme variables)
 export function getHTChartColors(type = "full") {
-  const vars = extractHTVariables();
-
-  // Detect current theme (you might need to adjust this logic)
-  const isDark =
-    document.documentElement.classList.contains("ht-darkmode") ||
-    window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const colors = {};
 
   if (type === "simple") {
-    return isDark ? vars.chartSimplePaletteDark : vars.chartSimplePaletteLight;
+    colors.blue = getHTVariable("ht-chart-simple-blue");
+    colors.red = getHTVariable("ht-chart-simple-red");
+    colors.grey = getHTVariable("ht-chart-simple-grey");
+  } else {
+    colors.orange1 = getHTVariable("ht-chart-orange-1");
+    colors.blue1 = getHTVariable("ht-chart-blue-1");
+    colors.green1 = getHTVariable("ht-chart-green-1");
+    colors.yellow1 = getHTVariable("ht-chart-yellow-1");
+    colors.blue2 = getHTVariable("ht-chart-blue-2");
+    colors.orange2 = getHTVariable("ht-chart-orange-2");
+    colors.purple1 = getHTVariable("ht-chart-purple-1");
+    colors.contrast = getHTVariable("ht-chart-contrast");
   }
-  return isDark ? vars.chartPaletteDark : vars.chartPaletteLight;
+
+  return colors;
 }
 
-// Export all variables as a single object
+// Export function to get surface and text colors for current theme
+export function getHTThemeColors() {
+  const theme = {};
+
+  // Surface colors
+  theme.surface1 = getHTVariable("ht-surface-1");
+  theme.surface2 = getHTVariable("ht-surface-2");
+  theme.surface3 = getHTVariable("ht-surface-3");
+  theme.surface4 = getHTVariable("ht-surface-4");
+
+  // Text colors
+  theme.textColor1 = getHTVariable("ht-text-color-1");
+  theme.textColor2 = getHTVariable("ht-text-color-2");
+
+  return theme;
+}
+
+// Export all HT variables as a single object
 export function getAllHTVariables() {
   const allVars = {};
   const allStyles = getComputedStyle(document.documentElement);
@@ -123,7 +63,8 @@ export function getAllHTVariables() {
 
   cssVars.forEach((varName) => {
     const cleanName = varName.replace("--", "");
-    allVars[cleanName] = getCSSVariable(varName);
+    allVars[cleanName] = getHTVariable(cleanName);
+    ß;
   });
 
   return allVars;
