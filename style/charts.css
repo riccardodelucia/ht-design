@@ -10,7 +10,3 @@ svg.ht-chart-title {
   font-weight: var(--ht-font-weight-5);
   background-color: var(--ht-surface-1);
 }
-
-svg.ht-chart text {
-  color: var(--ht-text-color-1-light); /* shouldn't it be fill? */
-}
