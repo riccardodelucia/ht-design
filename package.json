@@ -5,11 +5,11 @@
   "type": "module",
   "files": [
     "dist/style.css",
-    "dist/colorCssVars.js"
+    "src/index.js"
   ],
   "exports": {
     "./style.css": "./dist/style.css",
-    "./runtime": "./src/cssVarsRuntime.js"
+    ".": "./src/index.js"
   },
   "scripts": {
     "dev": "vite",
