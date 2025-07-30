@@ -1,0 +1,12 @@
+svg.ht-chart {
+  font-family: var(--ht-font-sans);
+  font-size: var(--ht-font-size-2);
+  font-weight: var(--ht-font-weight-4);
+  fill: var(--ht-text-color-1);
+}
+
+svg.ht-chart-title {
+  font-size: var(--ht-font-size-2);
+  font-weight: var(--ht-font-weight-5);
+  background-color: var(--ht-surface-1);
+}

@@ -4,10 +4,12 @@
   "version": "0.0.2",
   "type": "module",
   "files": [
-    "dist/style.css"
+    "dist/style.css",
+    "src/index.js"
   ],
   "exports": {
-    "./style.css": "./dist/style.css"
+    "./style.css": "./dist/style.css",
+    ".": "./src/index.js"
   },
   "scripts": {
     "dev": "vite",

@@ -1,18 +1,47 @@
-html,
-svg text {
-  font-family: var(--font-sans);
-  line-height: var(--font-lineheight-4);
+:root {
+  /* Font families */
+  --ht-font-sans: var(--font-sans);
+  --ht-font-serif: var(--font-serif);
+  --ht-font-mono: var(--font-mono);
+
+  /* Font sizes */
+  --ht-font-size-base: 16px;
+
+  --ht-font-size-0: 0.875rem;
+  --ht-font-size-1: var(--font-size-1); /* 1rem */
+  --ht-font-size-2: var(--font-size-2); /* 1.1rem */
+  --ht-font-size-3: var(--font-size-3); /* 1.25rem */
+  --ht-font-size-4: var(--font-size-4); /* 1.5rem */
+  --ht-font-size-5: var(--font-size-5); /* 2rem */
+
+  /* Font weights */
+  --ht-font-weight-4: var(--font-weight-4); /* 400 */
+  --ht-font-weight-5: var(--font-weight-5); /* 500 */
+  --ht-font-weight-6: var(--font-weight-6); /* 600 */
+  --ht-font-weight-7: var(--font-weight-7); /* 700 */
+
+  /* Line heights */
+  --ht-line-height-1: var(--font-lineheight-1); /* 1.25 */
+  --ht-line-height-2: var(--font-lineheight-2); /* 1.375 */
+  --ht-line-height-3: var(--font-lineheight-3); /* 1.5 */
+  --ht-line-height-4: var(--font-lineheight-4); /* 1.75 */
 }
 
 html {
+  font-family: var(--ht-font-sans);
+  font-size: var(--ht-font-size-base);
+
+  line-height: var(--ht-line-height-4);
   color: var(--ht-text-color-1);
 }
 
-svg.ht-chart text {
-  color: var(--text-color-1-light);
+svg text {
+  font-family: var(--ht-font-sans);
+  line-height: var(--ht-line-height-4);
+  fill: var(--ht-text-color-1);
 }
 
-// NOTE: heading tags should have a semantic meaning. There is no point in styling them without knowing the context
+/* NOTE: heading tags should have a semantic meaning. There is no point in styling them without knowing the context */
 h1,
 h2,
 h3,
@@ -20,14 +49,5 @@ h4,
 h5,
 h6,
 p {
-  font-weight: var(--font-weight-4);
-}
-
-body {
-  line-height: var(--font-lineheight-4);
-}
-
-.ht-chart-title {
-  font-size: var(--font-size-2);
-  font-weight: var(--font-weight-5);
+  font-weight: var(--ht-font-weight-4);
 }

@@ -17,8 +17,7 @@ input[type="search"],
 textarea,
 select,
 .ht-card {
-  border: 1px solid
-    var(--border-color, var(--ht-color-gray-1));
+  border: 1px solid var(--border-color, var(--ht-color-gray-1));
   border-radius: var(--radius-2);
 }
 
@@ -97,12 +96,11 @@ button.ht-reset:active {
   color: var(--button-text-color, inherit);
 }
 
-// For buttons, we avoid providing styling hooks for colors. This requires too much customization,
-// taking into account also hover color changes. For very customized button needs, it is better to create a new class and style colors explicitly
+/* For buttons, we avoid providing styling hooks for colors. This requires too much customization,
+   taking into account also hover color changes. For very customized button needs, it is better to create a new class and style colors explicitly */
 button,
 a.ht-button {
-
-  // underscore variables are intended to be 'private'
+  /* underscore variables are intended to be 'private' */
   --_button-color: var(--ht-color-primary);
 
   border: 2px solid var(--_button-color);
@@ -159,8 +157,8 @@ a.ht-button {
   font-size: var(--error-font-size, --font-size-0);
   color: var(--ht-color-red);
 }
-///////////////////////////////////////////////
-// TEXT INPUT
+
+/* TEXT INPUT */
 input[type="text"],
 input[type="email"],
 input[type="number"],
@@ -205,12 +203,13 @@ textarea {
 }
 
 select {
-  padding-block: calc(1rem - 4px); //to make it identical to other input heights
+  padding-block: calc(
+    1rem - 4px
+  ); /* to make it identical to other input heights */
 }
 
-///////////////////////////////////////////////
-// CHECKBOX AND RADIO
-input[type='checkbox'],
+/* CHECKBOX AND RADIO */
+input[type="checkbox"],
 input[type="radio"] {
   --input-control-size: var(--font-size-4);
 
@@ -218,15 +217,13 @@ input[type="radio"] {
   aspect-ratio: 1 / 1;
 }
 
-
-input[type='checkbox'] {
+input[type="checkbox"] {
   accent-color: var(--checkbox-color, var(--ht-color-accent));
 }
 
-input[type='radio'] {
+input[type="radio"] {
   accent-color: var(--radio-color, var(--ht-color-accent));
 }
-
 
 .ht-radiogroup {
   display: flex;
@@ -237,8 +234,7 @@ input[type='radio'] {
   }
 }
 
-///////////////////////////////////////////////
-// TOGGLE SWITCH
+/* TOGGLE SWITCH */
 input[type="checkbox"][role="switch"] {
   appearance: none;
   width: 3rem;
@@ -266,8 +262,7 @@ input[type="checkbox"][role="switch"] {
   }
 }
 
-///////////////////////////////////////////////
-// PROGRESS INPUT
+/* PROGRESS INPUT */
 progress {
   --_progress-color: var(--progress-color, var(--ht-color-accent));
   --_progress-background: var(--progress-background, transparent);
@@ -278,7 +273,7 @@ progress {
   height: 0.6rem;
   width: var(--progress-width, 100%);
 
-  // NOTE: do not group this selectors, otherwise they stop working
+  /* NOTE: do not group these selectors, otherwise they stop working */
   &::-moz-progress-bar {
     background-color: var(--_progress-color);
     border-radius: var(--radius-round);
@@ -322,7 +317,7 @@ progress {
     width: 17px;
 
     position: absolute;
-    right: .5em;
+    right: 0.5em;
     top: 1em;
 
     &:before,
@@ -356,7 +351,6 @@ progress {
 /* INDICATORS                                                           */
 /************************************************************************/
 .ht-number-indicator {
-
   --indicator-border-color: var(--ht-color-primary);
   --indicator-text-color: var(--ht-color-primary);
   --indicator-background-color: transparent;

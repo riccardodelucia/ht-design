@@ -12,8 +12,9 @@
 
 @import "reset.css";
 @import "base.css";
-@import "typography.css";
-@import "layouts.css";
+@import "charts.css";
 @import "colors.css";
 @import "components.css";
+@import "layouts.css";
+@import "typography.css";
 @import "utilities.css";
